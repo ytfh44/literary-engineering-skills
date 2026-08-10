@@ -12,7 +12,8 @@ EXPECTED = [
     'property-and-adjective-engineering','naming-and-address-engineering',
     'predicate-licensing-and-personification',
     'camera-attention-engineering','sentence-pressure','dialogue-voice',
-    'narrator-intervention-abstraction-control','character-motive-engineering',
+    'narrator-intervention-abstraction-control','character-motive',
+    'knowledge-boundaries','social-naming-relation-maps',
     'counterfactual-revision','literary-style-router','literary-evals',
 ]
 TRANSFER = {'chinese-derived-event-geometry','english-derived-motion-packaging','french-derived-motion-packaging'}

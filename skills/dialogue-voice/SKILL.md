@@ -112,12 +112,12 @@ earned or borrowed by the story.
 
 - [voice-profile.md](references/voice-profile.md) for building the
   per-layer profile and testing it.
-- [role-knowledge-boundaries.md](references/role-knowledge-boundaries.md)
-  for what a character can know versus how they phrase it.
 - [register-mismatch.md](references/register-mismatch.md) for
   institutional and prestige leakage.
 - [author-mouthpiece.md](references/author-mouthpiece.md) for shared
   narrator vocabulary across characters.
+- For what a character can know versus how they phrase it, see the
+  `knowledge-boundaries` skill.
 
 ## Return shape
 
