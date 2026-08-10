@@ -1,6 +1,6 @@
 ---
 name: literary-evals
-description: Use when testing literary skills, prompts, rubrics, or repeated model outputs for trigger accuracy, causal understanding, counterexample handling, cross-language transfer, regression, or newly learned stock phrases rather than revising one passage only.
+description: Use when testing literary skills, prompts, rubrics, or repeated model outputs for trigger accuracy, causal understanding, counterexample handling, cross-language transfer, regression, or newly learned stock phrases rather than revising one passage only; use for the pack's per-skill trigger batteries (22 skills) and minimal-pair suites.
 license: Apache-2.0
 ---
 
@@ -16,7 +16,14 @@ For one passage and one suspected variable, use `counterfactual-revision`. For b
 
 ## Core test
 
-**A rule is useful only if it improves the target case and spares the counterexample.**
+**A rule is useful only if it improves the target case and spares the
+counterexample.**
+
+The pack's trigger battery covers all 22 skills with four fixture families
+per skill (should-trigger, should-not-trigger, ambiguous, quality cases);
+see `tests/eval_cases.yaml` and `tests/run_trigger_battery.py`. Fixture
+coverage is checked statically; prompt-trigger accuracy must be executed by
+the host agent that will use the skills.
 
 ## Evaluation families
 
@@ -24,8 +31,13 @@ For one passage and one suspected variable, use `counterfactual-revision`. For b
 2. **Minimal pairs** — one variable causes the target effect.
 3. **Counterexamples** — the suspicious form is necessary and must survive.
 4. **Adversarial cases** — the obvious heuristic points the wrong way.
-5. **Transfer cases** — a mechanism moves across languages through native carriers rather than calques.
-6. **Regression cases** — outputs after a skill edit do not acquire a new stock phrase.
+5. **Transfer cases** — a mechanism moves across languages through native
+   carriers rather than calques; includes transfer-residue checks (what
+   could not survive).
+6. **Regression cases** — outputs after a skill edit do not acquire a new
+   stock phrase.
+7. **Convergence cases** — different words, same operation skeleton (see
+   `corpus-convergence-audit`).
 
 ## Workflow
 
@@ -49,6 +61,13 @@ The target is discrimination, not cliché counting.
 - A conventional metaphor can be exact when its conventional trait is the scene's needed trait.
 - A relation-heavy sentence can be correct when it is an argument, not scene prose.
 
+## Rule strength
+
+**Method — eval protocol.** No literary-quality scoring, no numeric
+“literariness” verdicts. The reliable outputs are per-case verdicts
+(mechanism identified / missed), fixture coverage, and regression deltas.
+Scores may summarize a suite but never replace the per-case reason.
+
 ## Script
 
 `scripts/phrase_recurrence.py` detects repeated n-grams and scaffolds across outputs. Treat recurrence as a manual-inspection trigger, never as proof of bad style.
@@ -62,4 +81,4 @@ The target is discrimination, not cliché counting.
 
 ## Return shape
 
-Prefer a case table with **expected mechanism, pass condition, fail condition, observed result**. Numeric scores may summarize a suite, but never replace the per-case reason.
+Prefer a case table with **expected mechanism, pass condition, fail condition, observed result**. Numeric scores may summarize a suite, but never replace the per-case reason. For convergence work, return the operation trace alongside the surface text.

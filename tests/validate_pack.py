@@ -15,6 +15,7 @@ EXPECTED = [
     'narrator-intervention-abstraction-control','character-motive',
     'knowledge-boundaries','social-naming-relation-maps',
     'counterfactual-revision','literary-style-router','literary-evals',
+    'corpus-convergence-audit','literary-strategy-controller',
 ]
 TRANSFER = {'chinese-derived-event-geometry','english-derived-motion-packaging','french-derived-motion-packaging'}
 SCRIPT_PATHS = {
@@ -77,6 +78,8 @@ def validate(root: Path) -> list[str]:
             errors.append(f'{name}: no Minimal pair section')
         if '## Counterexamples' not in text:
             errors.append(f'{name}: no Counterexamples section')
+        if '## Rule strength' not in text:
+            errors.append(f'{name}: no Rule strength section')
         if name in TRANSFER:
             if '## Transfer' not in text:
                 errors.append(f'{name}: missing Transfer section')
