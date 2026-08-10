@@ -1,0 +1,8 @@
+# tool caches
+.ruff_cache/
+__pycache__/
+*.pyc
+
+# OS noise
+.DS_Store
+Thumbs.db

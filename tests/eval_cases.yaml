@@ -1,0 +1,652 @@
+{
+  "principles": [
+    "route_by_mechanism_not_adjective",
+    "frequency_is_alarm_not_verdict",
+    "transfer_operation_not_costume",
+    "one_variable_per_minimal_pair",
+    "labels_are_observations_not_character_parameters"
+  ],
+  "skills": {
+    "anti-ai-prose": {
+      "ambiguous": [
+        "这个教授在内心独白里说“重新审视”，算AI吗？",
+        "故意用公司话术写黑色幽默。",
+        "旁白跨越十年说“关系恶化了”。",
+        "角色年龄小但爱看心理学视频。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "bans 意味着 categorically",
+          "pass": "flags second sentence as possible redundant settlement, tests deletion",
+          "prompt": "她把钥匙放回桌上。这意味着他们的关系已经发生变化。"
+        },
+        {
+          "fail": "rewrites merely to avoid 意识到",
+          "pass": "keeps realization because proposition changes",
+          "prompt": "他意识到煤气没关。"
+        }
+      ],
+      "should_not_trigger": [
+        "技术报告里“因此”很多，要不要删？",
+        "这个角色就是咨询师，分析她的职业话语。",
+        "解释“意识到煤气没关”是否自然。",
+        "给我一个正式的项目复盘模板。",
+        "比较两个动词的结果态。",
+        "分析诗句的移步换景。",
+        "设计三层人物动机。",
+        "法语里如何表达走出房间的方式？"
+      ],
+      "should_trigger": [
+        "这段小说像季度复盘，帮我去掉那种味。",
+        "人物一开口就像心理咨询公众号。",
+        "叙述总在“重新审视关系”“完成成长”。",
+        "场景结束后总多一句告诉我它意味着什么。",
+        "把这段自助书式的感悟压回人物经验。",
+        "为什么这句像HR在总结员工？",
+        "去掉自动升华，但不要把所有抽象词删掉。",
+        "检查作者是否替人物总结心理变化。"
+      ]
+    },
+    "camera-attention-engineering": {
+      "ambiguous": [
+        "视点问题可能来自日语语法而非观察顺序。",
+        "故意蒙太奇式硬切。",
+        "静态目录是证物清单。",
+        "句子视觉跳跃其实是梦境策略。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "focuses on adjective richness",
+          "pass": "identifies threshold->cat->motion->car path",
+          "prompt": "他推门，看见猫。猫一窜钻进车底。"
+        },
+        {
+          "fail": "forces cinematic movement",
+          "pass": "allows inventory when cataloguing is purpose",
+          "prompt": "院里有树、猫、车。是静态勘验清单。"
+        }
+      ],
+      "should_not_trigger": [
+        "找一个更好的比喻。",
+        "统计关系词。",
+        "检查对白注册。",
+        "比较“杀/毙”。",
+        "法语外置manner。",
+        "人物动机反差。",
+        "只改句子节奏。",
+        "测试skill触发。"
+      ],
+      "should_trigger": [
+        "这段词都没问题，但不知道该先看哪里。",
+        "分析移步换景。",
+        "从全景缩到蛤蟆再到手的观察顺序。",
+        "让开门真正建立新的可见区域。",
+        "这段对象跳来跳去没有attention handoff。",
+        "检查遮挡解除和显露顺序。",
+        "不用华丽词，只测试镜头还能不能工作。",
+        "把观察转成行动但保持空间连续。"
+      ]
+    },
+    "character-motive-engineering": {
+      "ambiguous": [
+        "角色本来就是冲动和不稳定。",
+        "重大创伤后价值真的改变。",
+        "两个动机相互冲突而非一个生成器。",
+        "荒诞喜剧故意让人格随段落改变。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "declares “立体” because traits oppose",
+          "pass": "asks what stable variable selects exception; does not praise contrast alone",
+          "prompt": "吝啬但每年匿名捐款。"
+        },
+        {
+          "fail": "stores stingy+generous as traits",
+          "pass": "infers a closure/debt generator and derives labels",
+          "prompt": "他不接受模糊分账，却为精确可命名的债花很多钱。"
+        }
+      ],
+      "should_not_trigger": [
+        "检查对白用词。",
+        "找比喻。",
+        "统计关系句式。",
+        "分析日语视点。",
+        "比较法语路径。",
+        "只改动词。",
+        "做句子节奏。",
+        "做文本diff。"
+      ],
+      "should_trigger": [
+        "不要“杀手爱猫”式反差，给我稳定生成器。",
+        "角色对人慷慨但在另一个道德域很冷，怎么写得不贴标签？",
+        "让读者先贴错标签，再被行为击穿。",
+        "设计局部能力很强但不是万能天才的人物。",
+        "认知共情高、道德纳入低，怎样作为稳定机制？",
+        "角色行为看似矛盾，找隐藏变量。",
+        "不要性格形容词，给我决策函数。",
+        "如何让新场景打破读者模型但不打破角色？"
+      ]
+    },
+    "chinese-event-geometry": {
+      "ambiguous": [
+        "中文句子主要是视点顺序问题。",
+        "英语目标想借用中文结果态思路。",
+        "日语目标想借用连动式观察链。",
+        "古典例句需要历史训诂而不是写作操作。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "says this trick only works in Chinese",
+          "pass": "identifies property->change predicate and notes transferability",
+          "prompt": "春风又绿江南岸。"
+        },
+        {
+          "fail": "calques Chinese complement order",
+          "pass": "abstracts deictic/path operation then chooses native French carrier",
+          "prompt": "把中文趋向思路用于法语。"
+        }
+      ],
+      "should_not_trigger": [
+        "只统计虚词。",
+        "角色对白像作者。",
+        "只评一个比喻。",
+        "做人物动机。",
+        "法语路径是唯一问题。",
+        "只需要句子节奏。",
+        "评测整个skill包。",
+        "纯日语授受视点且不涉及事件打包。"
+      ],
+      "should_trigger": [
+        "用连动和趋向分析这句中文。",
+        "“视线被雪浮起一截”为什么成立？",
+        "结果补语怎样把结果塞进谓词？",
+        "用“奔马毙犬”分析谓词改变名词立场。",
+        "不要堆古词，分析中文event geometry。",
+        "把静态形容改成事件后果。",
+        "中文“来/去/进/出”怎样组织路径和视点？",
+        "把这种中式动词工程迁移到英语，不要硬译。"
+      ]
+    },
+    "counterfactual-revision": {
+      "ambiguous": [
+        "修复一个同时有事实错误和风格错误的句子。",
+        "用户要求“彻底重写”但又问原因。",
+        "两个版本事实本身也不同。",
+        "需要改变视点和时态才能修复连续性。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "changes more wording while comparing",
+          "pass": "attributes effect only to deletion and checks lost inference",
+          "prompt": "A有解释句，B只删解释句。"
+        },
+        {
+          "fail": "declares one change caused improvement",
+          "pass": "refuses causal attribution until variables are isolated",
+          "prompt": "两个版本一个改了动词、视点、节奏、比喻。"
+        }
+      ],
+      "should_not_trigger": [
+        "给我十种完全不同风格的版本。",
+        "先诊断这段为什么AI。",
+        "统计一百篇输出的套话复现。",
+        "写一个角色设定。",
+        "解释法语运动类型学。",
+        "把小说整体结构重构。",
+        "给一句话找比喻。",
+        "只做语法纠错。"
+      ],
+      "should_trigger": [
+        "只删“意味着”看看效果。",
+        "把“杀”换“毙”，其他字不动。",
+        "做A/B只改来和去。",
+        "删除结尾解释句，比较推断是否还在。",
+        "把比喻拿掉但保留事实。",
+        "只换主宾看责任感怎么变。",
+        "我有两个版本，找出到底哪个局部变化起作用。",
+        "不要整段重写，做最小intervention。"
+      ]
+    },
+    "dialogue-voice-integrity": {
+      "ambiguous": [
+        "孩子确实长期刷心理学短视频。",
+        "角色故意模仿领导说话。",
+        "教授私下说粗话。",
+        "技术人员在危机里说高度专业术语。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "assumes child cannot reason abstractly",
+          "pass": "separates proposition from register and repairs ownership",
+          "prompt": "“我们需要重新审视彼此边界。”由普通初中生说。"
+        },
+        {
+          "fail": "rejects by age alone",
+          "pass": "may keep term if earned by exposure",
+          "prompt": "少年说“边界感”但设定里天天刷心理短视频。"
+        }
+      ],
+      "should_not_trigger": [
+        "统计虚词。",
+        "比较隐喻。",
+        "做移步换景。",
+        "分析结果补语。",
+        "设计稳定动机。",
+        "法语运动打包。",
+        "做文本diff。",
+        "评测skill回归。"
+      ],
+      "should_trigger": [
+        "这个初中生为什么说话像心理咨询师？",
+        "角色懂这个道理，但不会用“关系模式”这个词。",
+        "同一部小说所有人都像作者。",
+        "把HR式对白还原成角色的工作对象。",
+        "检查年龄、职业、关系和当前目标是否支持这句话。",
+        "不要把低学历写成低智商，修语域。",
+        "恐惧中角色不该完整总结因果模型。",
+        "一个工程师的技术爆粗为什么反而自然？"
+      ]
+    },
+    "english-motion-engineering": {
+      "ambiguous": [
+        "英语里path lexical verb可能更好。",
+        "法语目标需要逆向重打包。",
+        "中文目标可能把manner放在连动里。",
+        "apparent motion可能只是修辞而非真实观察几何。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "praises phrasal verb as inherently expressive",
+          "pass": "decomposes manner/path and asks whether gait matters",
+          "prompt": "He stumbled out of the room."
+        },
+        {
+          "fail": "forces English particle syntax",
+          "pass": "allows sortir en trébuchant or another native hierarchy",
+          "prompt": "把同一操作迁到法语。"
+        }
+      ],
+      "should_not_trigger": [
+        "统计中文虚词。",
+        "分析角色动机。",
+        "只做比喻。",
+        "日语授受共感。",
+        "检查对白语域。",
+        "做句子节奏。",
+        "评测skill触发。",
+        "中文结果补语本身就是问题。"
+      ],
+      "should_trigger": [
+        "stumbled out为什么比went out unsteadily紧？",
+        "分析manner verb + path satellite。",
+        "glance up里动词和方向怎样分工？",
+        "The ridge swung into view是不是视场假运动？",
+        "什么时候不要把walk换成stride？",
+        "把英语manner/path分解迁移到中文。",
+        "法语句子也用英语分解法诊断，但别硬套phrasal verb。",
+        "区分对象运动和field-of-view motion。"
+      ]
+    },
+    "french-motion-engineering": {
+      "ambiguous": [
+        "法语本句manner就是主事件。",
+        "英语目标可能重新把manner塞回主谓词。",
+        "中文目标可能用趋向而非path verb。",
+        "出现动词既可解释为真实运动也可解释为显露。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "claims French must always externalize manner",
+          "pass": "identifies path spine and secondary manner without absolutism",
+          "prompt": "Il sortit de la pièce en trébuchant."
+        },
+        {
+          "fail": "keeps French surface syntax as rule",
+          "pass": "uses hierarchy diagnostically then repacks idiomatic English",
+          "prompt": "用法式分解法修一个英语句子。"
+        }
+      ],
+      "should_not_trigger": [
+        "统计关系词。",
+        "人物稳定动机。",
+        "日语ふと。",
+        "中文结果补语。",
+        "只做比喻。",
+        "对白注册。",
+        "句子节奏。",
+        "测试skill包。"
+      ],
+      "should_trigger": [
+        "sortir en trébuchant怎样分path和manner？",
+        "法语句子应该先决定path还是appearance吗？",
+        "apercevoir/entrevoir/surgir在显露上有什么不同？",
+        "不要把法语写成英语phrasal verb直译。",
+        "什么时候manner应该外置？",
+        "用法式path/manner拆分检查英语过载句。",
+        "把法语appearance思路迁移到中文。",
+        "法语不是绝对verb-framed，如何把类型学只当诊断？"
+      ]
+    },
+    "japanese-viewpoint-engineering": {
+      "ambiguous": [
+        "日语被动同时涉及责任和视点。",
+        "英语目标使用日本式attention操作。",
+        "中文目标想借用授受共感思路。",
+        "古典日语语法争议需要学术训诂。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "equates ふと with “suddenly” universally",
+          "pass": "identifies unplanned attention entry, not mere suddenness",
+          "prompt": "ふと窓を見ると、雪が降っていた。"
+        },
+        {
+          "fail": "claims unavailable outside Japanese",
+          "pass": "uses native perception/discourse carrier",
+          "prompt": "把ふと的机制迁移到法语。"
+        }
+      ],
+      "should_not_trigger": [
+        "统计中文关系词。",
+        "找比喻来源域。",
+        "设计人物动机。",
+        "只做法语path/manner。",
+        "只比较杀/毙。",
+        "做句长节奏。",
+        "做文本diff。",
+        "检查对白像HR。"
+      ],
+      "should_trigger": [
+        "ふと見る和じっと見る怎样改变attention mode？",
+        "来る/行く换掉后读者站位怎么变？",
+        "授受动词怎样把共感中心写进事件？",
+        "零主语为什么能维持视点连续？",
+        "分析万叶集“田子の浦ゆ…見れば”的视场展开。",
+        "不要叫“视点副词”正式类别，但分析这些词的视场作用。",
+        "把日式注意力工程迁移到中文。",
+        "英语里怎么实现“无预谋地转入注意”而不硬译ふと？"
+      ]
+    },
+    "literary-evals": {
+      "ambiguous": [
+        "我想评测同时也修当前段落。",
+        "只有一个输出但想知道skill是否稳定。",
+        "没有baseline模型可用。",
+        "触发描述看起来过宽但没有运行时agent。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "grades only count reduction",
+          "pass": "requires counterexample preservation, not low frequency",
+          "prompt": "必要“似乎”与冗余“似乎”成对测试。"
+        },
+        {
+          "fail": "marks transfer invalid because target is not Japanese",
+          "pass": "rewards native English carrier and penalizes surface calque",
+          "prompt": "把日式视点skill用到英语。"
+        }
+      ],
+      "should_not_trigger": [
+        "只帮我改这一句话。",
+        "这段AI味先诊断。",
+        "给我一个比喻。",
+        "解释“来/去”的视点。",
+        "人物对白像大人，改一下。",
+        "统计当前文本里的关系词。",
+        "写500字恐惧。",
+        "把两版文本做字符diff。"
+      ],
+      "should_trigger": [
+        "给这包skills做trigger正负例。",
+        "测试skill会不会把必要的“似乎”也删掉。",
+        "做跨语言回归，避免把日语技巧说成日语专属。",
+        "检查skill是不是产生了新的套话。",
+        "建立minimal pair评测，不要单一文学分数。",
+        "给每个skill做near-miss触发测试。",
+        "比较改skill前后模型输出的重复n-gram。",
+        "设计反例确保show-dont-tell不会过拟合。"
+      ]
+    },
+    "literary-style-router": {
+      "ambiguous": [
+        "这段很平，但我怀疑是动词。",
+        "这段AI味主要来自“意味着”吗？",
+        "中式文学化一下。",
+        "让这段更有镜头感，同时保留原句。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "activates metaphor or rewrites without diagnosis",
+          "pass": "routes primarily to anti-ai-prose, optionally relation-language-audit",
+          "prompt": "这段很AI：她意识到这段关系让自己完成了成长。"
+        },
+        {
+          "fail": "assumes metaphor by default",
+          "pass": "diagnoses state-label/evidence before choosing sensory-specificity",
+          "prompt": "他很紧张。怎么让它不平？"
+        }
+      ],
+      "should_not_trigger": [
+        "比较“杀”和“毙”的施受关系。",
+        "检查这段日语里的来る/行く视点。",
+        "找出这一段所有“因此”的上下文。",
+        "只分析这个比喻是否浪费字。",
+        "把这两版做单变量diff。",
+        "检查角色有没有把作者的话说出来。",
+        "分析这段法语的path/manner包装。",
+        "设计一个稳定动机驱动的人物。"
+      ],
+      "should_trigger": [
+        "这段看起来很AI，但我说不出具体哪里不对。",
+        "帮我把这段小说写得不那么木。",
+        "这段太平了，先诊断而不是直接重写。",
+        "为什么这段明明词很好却不文学？",
+        "这段有点紫色散文感，找出真正机制。",
+        "同一段里可能有视点、比喻、关系词问题，怎么排查？",
+        "给我决定该用哪个文学skill，不要全开。",
+        "先判断这段“假深刻”究竟是句式、动词还是人物口吻。"
+      ]
+    },
+    "metaphor-engineering": {
+      "ambiguous": [
+        "“纸薄如蝉翼”太常见，要不要删？",
+        "一个故意陈词滥调的角色说套话。",
+        "这段很平，我不确定是不是需要比喻。",
+        "同一个意象反复出现，可能是motif。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "praises novelty or gives rarer source only",
+          "pass": "notes shared-property duplication unless ink adds scene-specific structure",
+          "prompt": "夜色像墨一样黑。"
+        },
+        {
+          "fail": "rejects solely because crowd=tide is conventional",
+          "pass": "can keep tide if coordinated front/shape matters",
+          "prompt": "人群像潮水一样退开，绕着警戒线形成一条弧。"
+        }
+      ],
+      "should_not_trigger": [
+        "检查“他走进来”的动词角色。",
+        "这段对白像HR。",
+        "统计虚词。",
+        "设计人物稳定动机。",
+        "分析日语来る/行く。",
+        "只调整句子断句。",
+        "把观察顺序改清楚。",
+        "做法语path/manner拆分。"
+      ],
+      "should_trigger": [
+        "这个比喻是不是只在说“黑”？",
+        "帮我找一个不老套但更重要是更精确的比喻。",
+        "这句“愤怒像火”浪费字了吗？",
+        "做比喻ablation，看删掉后损失什么。",
+        "我不想要新鲜感，我要对象特异性。",
+        "判断这个常见比喻其实是不是很准确。",
+        "别堆意象，找一个能预测后果的来源域。",
+        "比较两个比喻哪个携带更多结构。"
+      ]
+    },
+    "relation-language-audit": {
+      "ambiguous": [
+        "“然而”很多，但这是法庭辩论。",
+        "小说里故意模仿学术论文。",
+        "一段内心独白里“似乎”连续出现。",
+        "“不是A而是B”可能真的改变预测。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "deletes 因此 automatically",
+          "pass": "tests whether event order can carry cause; does not convict by count",
+          "prompt": "他没带伞，因此淋湿了。"
+        },
+        {
+          "fail": "treats hedge as filler",
+          "pass": "recognizes epistemic scope and normally keeps 似乎",
+          "prompt": "他似乎睡着了。"
+        }
+      ],
+      "should_not_trigger": [
+        "写一个没有关系词的诗。",
+        "分析一个比喻的来源域。",
+        "这句“杀”是不是太重？",
+        "人物动机为什么不一致？",
+        "日语ふと和ちらり的区别。",
+        "英语stumble out怎么打包manner/path。",
+        "给我改对白年龄感。",
+        "只想知道两版句子哪处字符不同。"
+      ],
+      "should_trigger": [
+        "统计这篇小说里“因此/然而/意味着”的频率和上下文。",
+        "检查关系实词是不是太多。",
+        "这段总是“并非A而是B”，做句式审计。",
+        "找出场景里被重复说明的因果。",
+        "用jieba看虚词候选，但别给AI分数。",
+        "检查“层面/维度/状态/过程”是否在替场景结算。",
+        "这篇长文关系词太密，给keep/compress/rewrite分组。",
+        "对“似乎”做concordance，看哪些是必要的认识限定。"
+      ]
+    },
+    "sensory-specificity": {
+      "ambiguous": [
+        "“他很累”可能已经足够。",
+        "“她攥拳”可能是冷而非怒。",
+        "故意用心理诊断式旁白。",
+        "细节需要明确唯一解释的悬疑线索。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "uses show-dont-tell as universal rule",
+          "pass": "explains bounded inference rather than “show is always better”",
+          "prompt": "她显得很不耐烦 / 她第三次看表。"
+        },
+        {
+          "fail": "forces bodily cue inventory",
+          "pass": "may keep direct label when evidence would repeat prior action",
+          "prompt": "他很累。"
+        }
+      ],
+      "should_not_trigger": [
+        "找比喻来源域。",
+        "分析趋向补语。",
+        "统计虚词。",
+        "检查角色动机。",
+        "法语path/manner。",
+        "给skill做回归。",
+        "只做句长调整。",
+        "解释对白为什么像HR。"
+      ],
+      "should_trigger": [
+        "“她很不耐烦”能不能换成有法域的证据？",
+        "别给我皱眉攥拳库存，找一个特异动作。",
+        "如何让恐惧不直接写“害怕”？",
+        "这个细节是不是太泛，什么都能解释？",
+        "这个细节是不是把心理解释封死了？",
+        "让雪的厚度通过可测后果出现。",
+        "状态标签和场景证据什么时候各自更便宜？",
+        "“等地铁的神情”为什么比“不耐烦”有想象空间？"
+      ]
+    },
+    "sentence-pressure-and-rhythm": {
+      "ambiguous": [
+        "故意用平铺清单制造冷感。",
+        "极短句是角色呼吸节奏。",
+        "长句是意识流且故意多路径。",
+        "重复是仪式性修辞而非信息推进。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "says “mix long and short”",
+          "pass": "tests whether one continuous path should be joined",
+          "prompt": "他开门。走进去。看见杯子。停住。"
+        },
+        {
+          "fail": "merges because sentences are too short",
+          "pass": "recognizes accumulating unresolved clues",
+          "prompt": "门没锁。灯关着。饭还热。"
+        }
+      ],
+      "should_not_trigger": [
+        "统计“然而”。",
+        "找一个比喻。",
+        "设计人物动机。",
+        "日语授受视点。",
+        "法语path verb。",
+        "检查对白年龄。",
+        "只比较两个动词。",
+        "做skill触发测试。"
+      ],
+      "should_trigger": [
+        "不要告诉我长短句交替，分析信息释放。",
+        "这段全是短句却不紧张，为什么？",
+        "长句是不是在一条连续动作路径上？",
+        "重复三次到底是在累积还是复读？",
+        "哪里应该延迟揭示主语？",
+        "句子断开后动作路径被切碎了。",
+        "分析不确定性何时建立和释放。",
+        "给我按information pressure修节奏。"
+      ]
+    },
+    "verb-engineering-core": {
+      "ambiguous": [
+        "中文句子里动词和趋向一起有问题。",
+        "英语phrasal verb既含路径又含体貌。",
+        "被动句可能是视点也可能是责任。",
+        "陌生搭配可能是创造也可能是病句。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "chooses rarer phrase as better",
+          "pass": "explains agent/result framing rather than “vividness”",
+          "prompt": "逸马杀犬 / 奔马毙犬。"
+        },
+        {
+          "fail": "upgrades to rare verb automatically",
+          "pass": "asks whether gait matters and may keep 走",
+          "prompt": "他走进房间。是否换成踱进？"
+        }
+      ],
+      "should_not_trigger": [
+        "统计“因此”的频率。",
+        "检查对白像不像小孩。",
+        "只判断这个比喻。",
+        "设计镜头从远到近。",
+        "日语授受视点分析。",
+        "法语路径动词清单。",
+        "人物反差是不是贴标签。",
+        "测试新skill触发率。"
+      ],
+      "should_trigger": [
+        "比较“杀/毙/踩死”怎样改责任。",
+        "这个动词是不是只比原词稀有，没有改事件？",
+        "找出谓词给主宾分配的角色。",
+        "把“很冷”改成事件后果前先分析动词。",
+        "这个使役动词是不是过度承诺因果？",
+        "分析结果态、控制和持续时间。",
+        "“走/踱/蹒跚”哪个真的改变预测？",
+        "解释谓词强制转换为什么成立或失败。"
+      ]
+    }
+  },
+  "version": 1
+}
