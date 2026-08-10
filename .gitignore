@@ -6,3 +6,12 @@ __pycache__/
 # OS noise
 .DS_Store
 Thumbs.db
+
+# controlled-experiment artifacts (never commit)
+/judge_*.json
+/blind_*.json
+/ab_*.json
+/gen_*_out.json
+/grade_*.json
+/ab_audit_rows.json
+/score_report.txt
