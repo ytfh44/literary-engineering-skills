@@ -29,13 +29,13 @@ with tempfile.TemporaryDirectory() as td:
     a.write_text('他没带伞，因此淋湿了。她似乎没看见，同时把门关上。', encoding='utf-8')
     b.write_text('他没带伞。到办公室时袖口还在滴水。她似乎没看见，把门关上。', encoding='utf-8')
 
-    data=run_json(ROOT/'skills/relation-language-audit/scripts/zh_style_scan.py', a, '--json', '--allow-char-fallback')
+    data=run_json(ROOT/'skills/relation-scaffolding/scripts/zh_style_scan.py', a, '--json', '--allow-char-fallback')
     assert data['characters'] > 0 and data['sentences'] == 2
     assert data['candidates']['因此']['count'] == 1
     assert data['candidates']['似乎']['count'] == 1
     assert not data['source_modified']
 
-    rows=run_json(ROOT/'skills/relation-language-audit/scripts/concordance.py', a, '似乎', '因此', '--json', '--window', '5')
+    rows=run_json(ROOT/'skills/relation-scaffolding/scripts/concordance.py', a, '似乎', '因此', '--json', '--window', '5')
     assert {r['pattern'] for r in rows} == {'似乎','因此'}
     assert all('match' in r and 'left' in r and 'right' in r for r in rows)
 
@@ -67,7 +67,7 @@ with tempfile.TemporaryDirectory() as td:
     assert rc == 0, f'expected clean exit after early close, rc={rc}'
 
     before=a.read_bytes()
-    run(ROOT/'skills/relation-language-audit/scripts/concordance.py', a, '因此')
+    run(ROOT/'skills/relation-scaffolding/scripts/concordance.py', a, '因此')
     assert a.read_bytes() == before
 
 print('PASS: script smoke tests')

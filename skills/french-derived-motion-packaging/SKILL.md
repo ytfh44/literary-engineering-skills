@@ -1,6 +1,6 @@
 ---
-name: french-motion-engineering
-description: Use when path, manner, appearance, perception, or motion packaging should be separated before rewriting. Especially useful for French, but designed to export the path/manner/appearance decomposition to any language without forcing French verb-framed syntax.
+name: french-derived-motion-packaging
+description: "Use when path, manner, appearance, perception, or motion packaging should be separated before rewriting. Source tradition: French, where the path/manner/appearance hierarchy is easy to expose; includes a transfer procedure and a residue record for any target language without forcing French verb-framed syntax."
 license: Apache-2.0
 ---
 
@@ -32,7 +32,7 @@ If path is the backbone, a path verb may deserve the main predicate. If manner i
 ## Minimal pair
 
 > Il sortit de la pièce en trébuchant.
-
+>
 > He stumbled out of the room.
 
 The clauses can describe the same event while allocating path and manner differently. Neither allocation is inherently more expressive; the useful question is which component each language can foreground cheaply.
@@ -48,6 +48,23 @@ French contributes a useful hierarchy test: decide whether path, manner, or appe
 
 **Transfer the operation, not the costume.**
 
+## Transfer residue
+
+Cross-language transfer is not a lossless compile. Before moving an operation, record what survives and what does not:
+
+- **source operation** — the hierarchy test: decide whether path, manner, or appearance deserves the main predicate;
+- **portable core** — the foreground/background ranking of event components;
+- **source-language side effects** — French path verbs carry a neutral, continuous aspect and a clear ground argument;
+- **target carrier** — the native packaging chosen in the target language (English manner verb + particle, Chinese 趋向 or serial chain, Japanese predicate + viewpoint distribution);
+- **new target-language side effects** — what the carrier adds on its own: English packing adds informality, Chinese serial verbs add sequence, Japanese adds viewpoint;
+- **irrecoverable residue** — the exact neutrality of a French path spine (neither mannerful nor mannerless, simply path-shaped). A target sentence that cannot be equally neutral must choose a side; that forced choice is literary information.
+
+When transfer reverses the surface allocation but preserves what is foregrounded and what is backgrounded, it has succeeded. A French-shaped target sentence is not the goal.
+
+## Rule strength
+
+**Event decomposition.** Reliable operations: component ranking, path spine selection, manner backgrounding, appearance/perception substitution — each testable as a one-variable intervention. The typological tendency is a diagnostic, not a sentence generator: do not treat French as uniformly verb-framed, and do not ban compact manner expressions when they are idiomatic.
+
 ## Read next
 
 - [path-verbs.md](references/path-verbs.md) for choosing a path spine.
@@ -56,4 +73,4 @@ French contributes a useful hierarchy test: decide whether path, manner, or appe
 
 ## Return shape
 
-Return **event backbone -> secondary component -> French packaging or target-language packaging -> calque risk**. Avoid claims that another language “cannot express” the same relation.
+Return **event backbone -> secondary component -> French packaging or target-language packaging -> calque risk -> transfer residue**. Avoid claims that another language “cannot express” the same relation.

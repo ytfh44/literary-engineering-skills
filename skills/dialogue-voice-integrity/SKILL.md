@@ -32,7 +32,7 @@ If the best answer is “the author explaining the character,” move the propos
 ## Minimal pair
 
 > “我觉得我们需要重新审视一下彼此的边界。”
-
+>
 > “你别再拿我钥匙。”
 
 For many characters, both can point to the same conflict. The second owns an object and an action. The first is right only for a speaker who actually talks in that conceptual register.

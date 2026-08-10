@@ -32,7 +32,7 @@ Specificity is not detail count. One well-chosen event can constrain interpretat
 ## Minimal pair
 
 > 她显得很不耐烦。
-
+>
 > 她看了第三次表。
 
 The second does not “show” impatience by rule. It supplies a timed action that supports impatience, anxiety, urgency, or calculation while excluding many unrelated states. Context chooses among the nearby readings.

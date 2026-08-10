@@ -40,7 +40,7 @@ If yes, inspect it. The sentence may be replacing an event with an administrativ
 ## Minimal pair
 
 > 她把钥匙放回桌上。她意识到，他们的关系已经发生了变化。
-
+>
 > 她把钥匙放回桌上。这次没有拿走。
 
 The second version does not become “more human” by using concrete nouns. It stops charging the narrator to explain a relation the altered action can carry.

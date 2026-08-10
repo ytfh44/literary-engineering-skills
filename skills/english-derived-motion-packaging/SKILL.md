@@ -1,6 +1,6 @@
 ---
-name: english-motion-engineering
-description: Use when manner, path, particles, prepositions, reveal, or field-of-view motion should be packed tightly into a clause. Especially useful for English, but designed to export the manner/path decomposition to any language without forcing English phrasal-verb syntax.
+name: english-derived-motion-packaging
+description: "Use when manner, path, particles, prepositions, reveal, or field-of-view motion should be packed tightly into a clause. Source tradition: English, where manner+path packing is cheap to see; includes a transfer procedure and a residue record for any target language without forcing English phrasal-verb syntax."
 license: Apache-2.0
 ---
 
@@ -38,7 +38,7 @@ Do not replace every neutral motion verb with a manner verb. Do not calque Engli
 ## Minimal pair
 
 > He went out of the room unsteadily.
-
+>
 > He stumbled out of the room.
 
 The second is cheaper only if unstable gait matters. If “out of the room” is the sole event, `left the room` may be better than either.
@@ -54,6 +54,23 @@ The reusable object is the decomposition, not the phrasal verb. Reduce `stumbled
 
 **Transfer the operation, not the costume.**
 
+## Transfer residue
+
+Cross-language transfer is not a lossless compile. Before moving an operation, record what survives and what does not:
+
+- **source operation** — manner + path split across verb and satellite;
+- **portable core** — the two-coordinate decomposition: unstable manner + outward path;
+- **source-language side effects** — English phrasal verbs are short and colloquial; packing implies register;
+- **target carrier** — the native packaging chosen in the target language (French path verb + adjunct, Chinese manner verb + 趋向, Japanese predicate chain);
+- **new target-language side effects** — what the carrier adds on its own: French foregrounds the path, Chinese serial verbs add sequence, Japanese spreads timing across the chain;
+- **irrecoverable residue** — the exact brevity and informality of an English satellite construction. A target sentence that must spend more words is spending them visibly; that visibility is literary information.
+
+If another language needs more machinery to mimic English packing than to state the event naturally, unpack it. Compression is local to a grammar.
+
+## Rule strength
+
+**Event decomposition.** Reliable operations: manner/path split, satellite path, field entry, gaze motion, unpacking — each testable as a one-variable intervention. No preference for packed or unpacked clauses; the question is which component is load-bearing and where it lives cheapest. Do not praise a packed clause merely for being shorter.
+
 ## Read next
 
 - [manner-verbs.md](references/manner-verbs.md) for deciding when manner belongs in the verb.
@@ -62,4 +79,4 @@ The reusable object is the decomposition, not the phrasal verb. Reduce `stumbled
 
 ## Return shape
 
-Return **manner -> path -> English packaging or target-language packaging -> overcommitment risk**. Do not praise a packed clause merely for being shorter.
+Return **manner -> path -> English packaging or target-language packaging -> overcommitment risk -> transfer residue**. Do not praise a packed clause merely for being shorter.

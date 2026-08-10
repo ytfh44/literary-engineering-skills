@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 EXPECTED={p.parent.name for p in ROOT.glob('skills/*/SKILL.md')}
-TRANSFER={'chinese-event-geometry','japanese-viewpoint-engineering','english-motion-engineering','french-motion-engineering'}
+TRANSFER={'chinese-derived-event-geometry','english-derived-motion-packaging','french-derived-motion-packaging'}
 
 def fail(msg):
     print('FAIL:',msg)

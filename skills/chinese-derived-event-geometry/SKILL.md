@@ -1,6 +1,6 @@
 ---
-name: chinese-event-geometry
-description: "Use when a passage can gain precision by treating verbs as event geometry: serial action, direction, result, temporary predicate coercion, or role reassignment. Especially useful for Chinese, but also for transferring these operations into any language with a natural carrier."
+name: chinese-derived-event-geometry
+description: "Use when a passage can gain precision by treating verbs as event geometry: serial action, direction, result, temporary predicate coercion, or role reassignment. Source tradition: Chinese, where these operations are cheap to see; includes a transfer procedure and a residue record for any target language with a natural carrier."
 license: Apache-2.0
 ---
 
@@ -41,7 +41,7 @@ The gain must be event structure, not lexical rarity.
 ## Minimal pair
 
 > 雪很厚，阳光很刺眼。
-
+>
 > 视线被雪浮起一截，直撞上太阳。
 
 The second version is not better because it is stranger. It converts snow depth into a change of perceptual geometry and sunlight into a consequence along that path. If the scene does not support those relations, the first is safer.
@@ -57,6 +57,23 @@ Chinese is the laboratory here, not the border. First strip off Chinese morpholo
 
 **Transfer the operation, not the costume.**
 
+## Transfer residue
+
+Cross-language transfer is not a lossless compile. Before moving an operation, record what survives and what does not:
+
+- **source operation** — the mechanism as abstracted (here: result encoded in or near the predicate; deictic path in direction complements);
+- **portable core** — the event relation that any language can express (endpoint reached, sightline raised, motion oriented to a center);
+- **source-language side effects** — what Chinese carries almost for free: complement morphology, compact serial verbs, zero-copula result phrasing;
+- **target carrier** — the native packaging chosen in the target language;
+- **new target-language side effects** — what the carrier adds on its own: English result constructions add an informal register, French path verbs foreground the path, Japanese predicates spread the event across a chain;
+- **irrecoverable residue** — what cannot survive: the exact implicitness of a Chinese result complement, or the zero-cost compactness of serial verbs. The residue is itself literary information: a target sentence that spends extra words is spending them visibly.
+
+If the translated clause preserves Chinese word order but loses native ease, it failed: keep the geometry, discard the calque, and report the residue.
+
+## Rule strength
+
+**Event decomposition.** Reliable operations: serialization, orientation, result encoding, role reassignment, controlled coercion, eventification — each testable as a one-variable intervention. Do not treat any operation as a universal preference: extra event structure is waste when manner and path do not matter. The language-specific parts (complement inventory, collocation habits) are reference, not rules.
+
 ## Read next
 
 - [serial-verbs.md](references/serial-verbs.md) for action chains and attention paths.
@@ -67,4 +84,4 @@ Chinese is the laboratory here, not the border. First strip off Chinese morpholo
 
 ## Return shape
 
-Return **source operation -> event change -> Chinese carrier or target-language carrier -> calque risk**. Never conclude that the operation “cannot be done” in another language merely because the packaging differs.
+Return **source operation -> event change -> Chinese carrier or target-language carrier -> calque risk -> transfer residue**. Never conclude that the operation “cannot be done” in another language merely because the packaging differs.

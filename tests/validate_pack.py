@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+
 import re
 import sys
 from pathlib import Path
 
 EXPECTED = [
-    'literary-style-router','anti-ai-prose','relation-language-audit','metaphor-engineering',
-    'verb-engineering-core','chinese-event-geometry','japanese-viewpoint-engineering',
-    'english-motion-engineering','french-motion-engineering','camera-attention-engineering',
-    'sensory-specificity','dialogue-voice-integrity','character-motive-engineering',
-    'counterfactual-revision','sentence-pressure-and-rhythm','literary-evals'
+    'relation-scaffolding','metaphor-audit','verb-event-engineering',
+    'chinese-derived-event-geometry','english-derived-motion-packaging',
+    'french-derived-motion-packaging','adverb-particle-viewpoint-engineering',
+    'property-and-adjective-engineering','naming-and-address-engineering',
+    'predicate-licensing-and-personification',
+    'anti-ai-prose','camera-attention-engineering',
+    'sensory-specificity','sentence-pressure-and-rhythm',
+    'dialogue-voice-integrity','character-motive-engineering',
+    'counterfactual-revision','literary-style-router','literary-evals',
 ]
-TRANSFER = {'chinese-event-geometry','japanese-viewpoint-engineering','english-motion-engineering','french-motion-engineering'}
+TRANSFER = {'chinese-derived-event-geometry','english-derived-motion-packaging','french-derived-motion-packaging'}
 SCRIPT_PATHS = {
-    'relation-language-audit': ['scripts/zh_style_scan.py','scripts/concordance.py'],
+    'relation-scaffolding': ['scripts/zh_style_scan.py','scripts/concordance.py'],
     'counterfactual-revision': ['scripts/revision_diff.py'],
     'literary-evals': ['scripts/phrase_recurrence.py'],
 }
@@ -77,6 +82,8 @@ def validate(root: Path) -> list[str]:
                 errors.append(f'{name}: missing Transfer section')
             if 'Transfer the operation, not the costume.' not in text:
                 errors.append(f'{name}: missing transfer maxim')
+            if '## Transfer residue' not in text:
+                errors.append(f'{name}: missing Transfer residue section')
         for link in LINK_RE.findall(text):
             if '://' in link or link.startswith('#'):
                 continue
