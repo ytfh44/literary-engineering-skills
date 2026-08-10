@@ -1,6 +1,6 @@
 ---
 name: metaphor-audit
-description: Use when a metaphor, simile, analogy, or figurative comparison feels generic, ornamental, cliché, overlong, or interchangeable with thousands of objects; use when deciding whether a literal description is stronger than an image, or when a character's habitual metaphor is doing voice work; use before generating new metaphors — audit first, "no metaphor needed" is a valid verdict.
+description: Use when a metaphor, simile, analogy, or figurative comparison feels generic, ornamental, cliché, overlong, or interchangeable with thousands of objects; use when deciding whether a literal description is stronger than an image, or when a character's habitual metaphor is doing voice work; use before generating new metaphors — audit first, "no metaphor needed" is a valid verdict; use for ablation tests (delete the image, record what disappears).
 license: Apache-2.0
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: literary-strategy-controller
-description: Use when a revision plan is being executed over a longer passage and several local fixes are already in play — track the document state, compute marginal utility before each next operation, and avoid turning six individually correct local choices into one house style; use for state-dependent adaptation instead of randomization.
+description: Use when a revision plan is being executed over a longer passage and several local fixes are already in play — track the document state, compute marginal utility before each next operation, and avoid turning six individually correct local choices into one house style; decides motif vs. template (repetition must change the work state); use for state-dependent adaptation instead of randomization.
 license: Apache-2.0
 ---
 
