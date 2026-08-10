@@ -1,6 +1,6 @@
 ---
 name: chinese-derived-event-geometry
-description: "Use when a passage can gain precision by treating verbs as event geometry: serial action, direction, result, temporary predicate coercion, or role reassignment. Source tradition: Chinese, where these operations are cheap to see; includes a transfer procedure and a residue record for any target language with a natural carrier."
+description: "Use when a passage can gain precision by treating verbs as event geometry: serial action, direction, result, temporary predicate coercion, role reassignment, or eventifying static properties into event consequences. Source tradition: Chinese, where these operations are cheap to see; includes a transfer procedure and a residue record for any target language with a natural carrier."
 license: Apache-2.0
 ---
 

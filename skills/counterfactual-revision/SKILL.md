@@ -1,6 +1,6 @@
 ---
 name: counterfactual-revision
-description: Use when the user wants to know which local change actually improves or harms a passage, compare two revisions, test a suspected relation word, adjective, name, verb, or particle, or revise by controlled one-variable interventions rather than wholesale rewriting; this is the pack's shared experiment protocol — every layer has a canonical intervention.
+description: Use when the user wants to know which local change actually improves or harms a passage, compare two revisions, test a suspected relation word, adjective, name, verb, particle, or metaphor, swap subject/object focus, or revise by controlled one-variable interventions rather than wholesale rewriting; this is the pack's shared experiment protocol — every layer has a canonical intervention.
 license: Apache-2.0
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: naming-and-address-engineering
-description: Use when the same person or object is referred to in a way that changes the frame — 狗/野狗/那畜生/阿黄, 那个男人/老头/李叔/父亲/主任 — and the choice of name carries knowledge, social relation, emotional distance, or narrative alignment; use when renaming should happen because the frame changed, not for variety.
+description: "Use for a single naming act in one scene: the same person or object referred to in a way that changes the frame — 狗/野狗/那畜生/阿黄, 那个男人/老头/李叔/父亲/主任 — and the choice of name carries knowledge, social relation, emotional distance, or narrative alignment; use when renaming should happen because the frame changed, not for variety."
 license: Apache-2.0
 ---
 

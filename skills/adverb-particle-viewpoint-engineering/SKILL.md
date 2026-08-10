@@ -1,6 +1,6 @@
 ---
 name: adverb-particle-viewpoint-engineering
-description: Use when a particle, adverb, clitic, or aspect marker changes how an event is understood without changing the event — 又/才/也/竟/还/只, ふと/ちらり/じっと, expectation, presupposition, deictic center, empathy — and the question is which reader stance each carrier produces; use for minimal-pair tests of attention, recurrence, threshold, and violated expectation in any language.
+description: Use when a particle, adverb, clitic, or aspect marker changes how an event is understood without changing the event — 又/才/也/竟/还/只, ふと/ちらり/じっと, expectation, presupposition, deictic center, empathy — and the question is which reader stance each carrier produces; use for minimal-pair tests of attention, recurrence, threshold, and violated expectation in any language; carries the Japanese viewpoint tradition (ふと/じっと, 来る/行く, giving/receiving, zero-subject continuity) as a laboratory.
 license: Apache-2.0
 ---
 

@@ -1,0 +1,1924 @@
+{
+ "descriptions": {
+  "adverb-particle-viewpoint-engineering": "Use when a particle, adverb, clitic, or aspect marker changes how an event is understood without changing the event — 又/才/也/竟/还/只, ふと/ちらり/じっと, expectation, presupposition, deictic center, empathy — and the question is which reader stance each carrier produces; use for minimal-pair tests of attention, recurrence, threshold, and violated expectation in any language; carries the Japanese viewpoint tradition (ふと/じっと, 来る/行く, giving/receiving, zero-subject continuity) as a laboratory.",
+  "camera-attention-engineering": "Use when a scene’s vocabulary is acceptable but the reader sees it in the wrong order, distance, scale, or access path; when reveal, occlusion, observer movement, attention shifts, or “移步换景” matter more than ornament.",
+  "character-motive": "Use when a character feels flat, “three-dimensional” only because opposite traits were pasted together, or keeps changing personality to surprise the reader; use when a stable motive should generate unusual labels that later scenes repeatedly overturn; use when behavior needs a partially coherent model — durable motives plus habits, beliefs, misbeliefs, role performance, and an unexplained residual — instead of a compressible decision function.",
+  "chinese-derived-event-geometry": "Use when a passage can gain precision by treating verbs as event geometry: serial action, direction, result, temporary predicate coercion, role reassignment, or eventifying static properties into event consequences. Source tradition: Chinese, where these operations are cheap to see; includes a transfer procedure and a residue record for any target language with a natural carrier.",
+  "corpus-convergence-audit": "Use when many outputs, chapters, or corpus samples use different words but feel like the same writer — the same narrative operation skeleton under different vocabulary; use to detect operation-level convergence (sensory anomaly then mundane motive, object handoff, deleted explanation, motif return) that surface n-grams cannot catch.",
+  "counterfactual-revision": "Use when the user wants to know which local change actually improves or harms a passage, compare two revisions, test a suspected relation word, adjective, name, verb, particle, or metaphor, swap subject/object focus, or revise by controlled one-variable interventions rather than wholesale rewriting; this is the pack's shared experiment protocol — every layer has a canonical intervention.",
+  "dialogue-voice": "Use when dialogue or close interior narration sounds like the author, a therapist, HR, a critic, or a generic model instead of the actual speaker; use when age, profession, knowledge, local motive, or social register should constrain wording; use when a character's voice should be modeled as a cross-layer profile — preferred names, address terms, hedges, particles, sentence endings, relation markers, habitual metaphors, verb commitment, ellipsis, repair patterns.",
+  "english-derived-motion-packaging": "Use when manner, path, particles, prepositions, reveal, or field-of-view motion should be packed tightly into a clause. Source tradition: English, where manner+path packing is cheap to see; includes a transfer procedure and a residue record for any target language without forcing English phrasal-verb syntax.",
+  "french-derived-motion-packaging": "Use when path, manner, appearance, perception, or motion packaging should be separated before rewriting. Source tradition: French, where the path/manner/appearance hierarchy is easy to expose; includes a transfer procedure and a residue record for any target language without forcing French verb-framed syntax.",
+  "knowledge-boundaries": "Use when characters act on what they know, don't know, or misbelieve — and the narrative manages the gap between character knowledge, narrator knowledge, and reader knowledge; use for dramatic irony, concealment, disclosure, misrecognition, and the timing of what each party learns.",
+  "literary-evals": "Use when testing literary skills, prompts, rubrics, or repeated model outputs for trigger accuracy, causal understanding, counterexample handling, cross-language transfer, regression, or newly learned stock phrases rather than revising one passage only; use for the pack's per-skill trigger batteries (22 skills) and minimal-pair suites.",
+  "literary-strategy-controller": "Use when a revision plan is being executed over a longer passage and several local fixes are already in play — track the document state, compute marginal utility before each next operation, and avoid turning six individually correct local choices into one house style; use for state-dependent adaptation instead of randomization.",
+  "literary-style-router": "Use when a fiction-writing or revision request is broad, vague, or described only as “AI-like,” “flat,” “wooden,” “purple,” “not literary,” or “make it better,” and the actual failure mechanism has not yet been identified; routes in two stages — first the carrying layer, then the mechanism within it.",
+  "metaphor-audit": "Use when a metaphor, simile, analogy, or figurative comparison feels generic, ornamental, cliché, overlong, or interchangeable with thousands of objects; use when deciding whether a literal description is stronger than an image, or when a character's habitual metaphor is doing voice work; use before generating new metaphors — audit first, \"no metaphor needed\" is a valid verdict.",
+  "naming-and-address-engineering": "Use for a single naming act in one scene: the same person or object referred to in a way that changes the frame — 狗/野狗/那畜生/阿黄, 那个男人/老头/李叔/父亲/主任 — and the choice of name carries knowledge, social relation, emotional distance, or narrative alignment; use when renaming should happen because the frame changed, not for variety.",
+  "narrator-intervention-abstraction-control": "Use when the narrator names emotions, states, or meanings too directly, concludes before the scene earns it, summarizes in a foreign register (staff report, therapy recap, retrospective memo, self-help), or when abstraction density and explicit state naming should be controlled; use for evidence policy — when to offer bounded concrete evidence instead of a psychological label.",
+  "predicate-licensing-and-personification": "Use when a noun carries a predicate its class normally cannot — 风追着他, 门犹豫了一下才开, 城市醒了, 雪把声音接住了 — and the question is whether the crossing earns its cost; use when personification or agentive coercion should be diagnosed as a recoverable boundary crossing, not praised or banned by taste.",
+  "property-and-adjective-engineering": "Use when adjectives feel decorative, piled up, or wrong in a way that is hard to name; use when a property is assigned by an adjective (or adverb, or attributive noun) and the question is what job the property does; classify before deleting or replacing — discriminative, state-bearing, evaluative, or affective adjectives fail and pay differently.",
+  "relation-scaffolding": "Use when fiction keeps stating edges between events, states, or propositions — causation, contrast, implication, relationship, process, meaning — that event order or syntax could carry; use for AI-flavored concept-link scaffolds (“并非A而是B,” “不仅而且,” “因此可以看出,” “某种意义上”) and beginner event-link chains (“然后…然后…”); also use when the user wants a frequency/context audit of Chinese function words or relation-heavy content words.",
+  "sentence-pressure": "Use when prose drags, chops, stacks qualifications, repeats without building, or varies sentence length mechanically; use when the real issue is the timing of information, uncertainty, release, interruption, or syntactic load; also use when rhythm is phonetic or prosodic — stress, breath, momentum, parallelism — rather than informational.",
+  "social-naming-relation-maps": "Use for the whole-work view of naming: names and address terms encoding a relationship's trajectory across a work, naming consistency, and the global map where single naming acts accumulate — who calls whom what, when it changes, and what the map says about the social structure; use for naming consistency, relation arcs (李叔→老李→李建国), and the global frame where local naming acts (see naming-and-address-engineering) accumulate into structure.",
+  "verb-event-engineering": "Use when a fiction sentence has weak, decorative, over-rare, morally overcommitted, or role-confusing verbs; when changing a predicate may alter agency, responsibility, causation, control, intention, duration, path, result, or the noun's role in the event; use when an event needs decomposition before any verb is replaced."
+ },
+ "prompts": [
+  {
+   "id": "camera-attention-engineering#ST#0",
+   "prompt": "这段词都没问题，但不知道该先看哪里。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#1",
+   "prompt": "分析移步换景。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#2",
+   "prompt": "从全景缩到蛤蟆再到手的观察顺序。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#3",
+   "prompt": "让开门真正建立新的可见区域。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#4",
+   "prompt": "这段对象跳来跳去没有attention handoff。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#5",
+   "prompt": "检查遮挡解除和显露顺序。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#6",
+   "prompt": "不用华丽词，只测试镜头还能不能工作。"
+  },
+  {
+   "id": "camera-attention-engineering#ST#7",
+   "prompt": "把观察转成行动但保持空间连续。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#0",
+   "prompt": "找一个更好的比喻。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#1",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#2",
+   "prompt": "检查对白注册。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#3",
+   "prompt": "比较“杀/毙”。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#4",
+   "prompt": "法语外置manner。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#5",
+   "prompt": "人物动机反差。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#6",
+   "prompt": "只改句子节奏。"
+  },
+  {
+   "id": "camera-attention-engineering#SN#7",
+   "prompt": "测试skill触发。"
+  },
+  {
+   "id": "camera-attention-engineering#AM#0",
+   "prompt": "视点问题可能来自日语语法而非观察顺序。"
+  },
+  {
+   "id": "camera-attention-engineering#AM#1",
+   "prompt": "故意蒙太奇式硬切。"
+  },
+  {
+   "id": "camera-attention-engineering#AM#2",
+   "prompt": "静态目录是证物清单。"
+  },
+  {
+   "id": "camera-attention-engineering#AM#3",
+   "prompt": "句子视觉跳跃其实是梦境策略。"
+  },
+  {
+   "id": "counterfactual-revision#ST#0",
+   "prompt": "只删“意味着”看看效果。"
+  },
+  {
+   "id": "counterfactual-revision#ST#1",
+   "prompt": "把“杀”换“毙”，其他字不动。"
+  },
+  {
+   "id": "counterfactual-revision#ST#2",
+   "prompt": "做A/B只改来和去。"
+  },
+  {
+   "id": "counterfactual-revision#ST#3",
+   "prompt": "删除结尾解释句，比较推断是否还在。"
+  },
+  {
+   "id": "counterfactual-revision#ST#4",
+   "prompt": "把比喻拿掉但保留事实。"
+  },
+  {
+   "id": "counterfactual-revision#ST#5",
+   "prompt": "只换主宾看责任感怎么变。"
+  },
+  {
+   "id": "counterfactual-revision#ST#6",
+   "prompt": "我有两个版本，找出到底哪个局部变化起作用。"
+  },
+  {
+   "id": "counterfactual-revision#ST#7",
+   "prompt": "不要整段重写，做最小intervention。"
+  },
+  {
+   "id": "counterfactual-revision#SN#0",
+   "prompt": "给我十种完全不同风格的版本。"
+  },
+  {
+   "id": "counterfactual-revision#SN#1",
+   "prompt": "先诊断这段为什么AI。"
+  },
+  {
+   "id": "counterfactual-revision#SN#2",
+   "prompt": "统计一百篇输出的套话复现。"
+  },
+  {
+   "id": "counterfactual-revision#SN#3",
+   "prompt": "写一个角色设定。"
+  },
+  {
+   "id": "counterfactual-revision#SN#4",
+   "prompt": "解释法语运动类型学。"
+  },
+  {
+   "id": "counterfactual-revision#SN#5",
+   "prompt": "把小说整体结构重构。"
+  },
+  {
+   "id": "counterfactual-revision#SN#6",
+   "prompt": "给一句话找比喻。"
+  },
+  {
+   "id": "counterfactual-revision#SN#7",
+   "prompt": "只做语法纠错。"
+  },
+  {
+   "id": "counterfactual-revision#AM#0",
+   "prompt": "修复一个同时有事实错误和风格错误的句子。"
+  },
+  {
+   "id": "counterfactual-revision#AM#1",
+   "prompt": "用户要求“彻底重写”但又问原因。"
+  },
+  {
+   "id": "counterfactual-revision#AM#2",
+   "prompt": "两个版本事实本身也不同。"
+  },
+  {
+   "id": "counterfactual-revision#AM#3",
+   "prompt": "需要改变视点和时态才能修复连续性。"
+  },
+  {
+   "id": "literary-evals#ST#0",
+   "prompt": "给这包skills做trigger正负例。"
+  },
+  {
+   "id": "literary-evals#ST#1",
+   "prompt": "测试skill会不会把必要的“似乎”也删掉。"
+  },
+  {
+   "id": "literary-evals#ST#2",
+   "prompt": "做跨语言回归，避免把日语技巧说成日语专属。"
+  },
+  {
+   "id": "literary-evals#ST#3",
+   "prompt": "检查skill是不是产生了新的套话。"
+  },
+  {
+   "id": "literary-evals#ST#4",
+   "prompt": "建立minimal pair评测，不要单一文学分数。"
+  },
+  {
+   "id": "literary-evals#ST#5",
+   "prompt": "给每个skill做near-miss触发测试。"
+  },
+  {
+   "id": "literary-evals#ST#6",
+   "prompt": "比较改skill前后模型输出的重复n-gram。"
+  },
+  {
+   "id": "literary-evals#ST#7",
+   "prompt": "设计反例确保show-dont-tell不会过拟合。"
+  },
+  {
+   "id": "literary-evals#SN#0",
+   "prompt": "只帮我改这一句话。"
+  },
+  {
+   "id": "literary-evals#SN#1",
+   "prompt": "这段AI味先诊断。"
+  },
+  {
+   "id": "literary-evals#SN#2",
+   "prompt": "给我一个比喻。"
+  },
+  {
+   "id": "literary-evals#SN#3",
+   "prompt": "解释“来/去”的视点。"
+  },
+  {
+   "id": "literary-evals#SN#4",
+   "prompt": "人物对白像大人，改一下。"
+  },
+  {
+   "id": "literary-evals#SN#5",
+   "prompt": "统计当前文本里的关系词。"
+  },
+  {
+   "id": "literary-evals#SN#6",
+   "prompt": "写500字恐惧。"
+  },
+  {
+   "id": "literary-evals#SN#7",
+   "prompt": "把两版文本做字符diff。"
+  },
+  {
+   "id": "literary-evals#AM#0",
+   "prompt": "我想评测同时也修当前段落。"
+  },
+  {
+   "id": "literary-evals#AM#1",
+   "prompt": "只有一个输出但想知道skill是否稳定。"
+  },
+  {
+   "id": "literary-evals#AM#2",
+   "prompt": "没有baseline模型可用。"
+  },
+  {
+   "id": "literary-evals#AM#3",
+   "prompt": "触发描述看起来过宽但没有运行时agent。"
+  },
+  {
+   "id": "literary-style-router#ST#0",
+   "prompt": "这段看起来很AI，但我说不出具体哪里不对。"
+  },
+  {
+   "id": "literary-style-router#ST#1",
+   "prompt": "帮我把这段小说写得不那么木。"
+  },
+  {
+   "id": "literary-style-router#ST#2",
+   "prompt": "这段太平了，先诊断而不是直接重写。"
+  },
+  {
+   "id": "literary-style-router#ST#3",
+   "prompt": "为什么这段明明词很好却不文学？"
+  },
+  {
+   "id": "literary-style-router#ST#4",
+   "prompt": "这段有点紫色散文感，找出真正机制。"
+  },
+  {
+   "id": "literary-style-router#ST#5",
+   "prompt": "同一段里可能有视点、比喻、关系词问题，怎么排查？"
+  },
+  {
+   "id": "literary-style-router#ST#6",
+   "prompt": "给我决定该用哪个文学skill，不要全开。"
+  },
+  {
+   "id": "literary-style-router#ST#7",
+   "prompt": "先判断这段“假深刻”究竟是句式、动词还是人物口吻。"
+  },
+  {
+   "id": "literary-style-router#SN#0",
+   "prompt": "比较“杀”和“毙”的施受关系。"
+  },
+  {
+   "id": "literary-style-router#SN#1",
+   "prompt": "检查这段日语里的来る/行く视点。"
+  },
+  {
+   "id": "literary-style-router#SN#2",
+   "prompt": "找出这一段所有“因此”的上下文。"
+  },
+  {
+   "id": "literary-style-router#SN#3",
+   "prompt": "只分析这个比喻是否浪费字。"
+  },
+  {
+   "id": "literary-style-router#SN#4",
+   "prompt": "把这两版做单变量diff。"
+  },
+  {
+   "id": "literary-style-router#SN#5",
+   "prompt": "检查角色有没有把作者的话说出来。"
+  },
+  {
+   "id": "literary-style-router#SN#6",
+   "prompt": "分析这段法语的path/manner包装。"
+  },
+  {
+   "id": "literary-style-router#SN#7",
+   "prompt": "设计一个稳定动机驱动的人物。"
+  },
+  {
+   "id": "literary-style-router#AM#0",
+   "prompt": "这段很平，但我怀疑是动词。"
+  },
+  {
+   "id": "literary-style-router#AM#1",
+   "prompt": "这段AI味主要来自“意味着”吗？"
+  },
+  {
+   "id": "literary-style-router#AM#2",
+   "prompt": "中式文学化一下。"
+  },
+  {
+   "id": "literary-style-router#AM#3",
+   "prompt": "让这段更有镜头感，同时保留原句。"
+  },
+  {
+   "id": "relation-scaffolding#ST#0",
+   "prompt": "统计这篇小说里“因此/然而/意味着”的频率和上下文。"
+  },
+  {
+   "id": "relation-scaffolding#ST#1",
+   "prompt": "检查关系实词是不是太多。"
+  },
+  {
+   "id": "relation-scaffolding#ST#2",
+   "prompt": "这段总是“并非A而是B”，做句式审计。"
+  },
+  {
+   "id": "relation-scaffolding#ST#3",
+   "prompt": "找出场景里被重复说明的因果。"
+  },
+  {
+   "id": "relation-scaffolding#ST#4",
+   "prompt": "用jieba看虚词候选，但别给AI分数。"
+  },
+  {
+   "id": "relation-scaffolding#ST#5",
+   "prompt": "检查“层面/维度/状态/过程”是否在替场景结算。"
+  },
+  {
+   "id": "relation-scaffolding#ST#6",
+   "prompt": "这篇长文关系词太密，给keep/compress/rewrite分组。"
+  },
+  {
+   "id": "relation-scaffolding#ST#7",
+   "prompt": "对“似乎”做concordance，看哪些是必要的认识限定。"
+  },
+  {
+   "id": "relation-scaffolding#ST#8",
+   "prompt": "这段不像小说，像说明文在解释逻辑边（因此可以看出……）。"
+  },
+  {
+   "id": "relation-scaffolding#ST#9",
+   "prompt": "角色讲话全是“然后……然后……”，是事件链过度标记吗？"
+  },
+  {
+   "id": "relation-scaffolding#ST#10",
+   "prompt": "“这不仅体现了A，也意味着B”是概念链过度标记吗？"
+  },
+  {
+   "id": "relation-scaffolding#ST#11",
+   "prompt": "把“从某种意义上说”这类元话语框架找出来。"
+  },
+  {
+   "id": "relation-scaffolding#SN#0",
+   "prompt": "写一个没有关系词的诗。"
+  },
+  {
+   "id": "relation-scaffolding#SN#1",
+   "prompt": "分析一个比喻的来源域。"
+  },
+  {
+   "id": "relation-scaffolding#SN#2",
+   "prompt": "这句“杀”是不是太重？"
+  },
+  {
+   "id": "relation-scaffolding#SN#3",
+   "prompt": "人物动机为什么不一致？"
+  },
+  {
+   "id": "relation-scaffolding#SN#4",
+   "prompt": "日语ふと和ちらり的区别。"
+  },
+  {
+   "id": "relation-scaffolding#SN#5",
+   "prompt": "英语stumble out怎么打包manner/path。"
+  },
+  {
+   "id": "relation-scaffolding#SN#6",
+   "prompt": "给我改对白年龄感。"
+  },
+  {
+   "id": "relation-scaffolding#SN#7",
+   "prompt": "只想知道两版句子哪处字符不同。"
+  },
+  {
+   "id": "relation-scaffolding#SN#8",
+   "prompt": "检查作者是否替人物总结心理变化。"
+  },
+  {
+   "id": "relation-scaffolding#SN#9",
+   "prompt": "人物一开口就像心理咨询公众号。"
+  },
+  {
+   "id": "relation-scaffolding#AM#0",
+   "prompt": "“然而”很多，但这是法庭辩论。"
+  },
+  {
+   "id": "relation-scaffolding#AM#1",
+   "prompt": "小说里故意模仿学术论文。"
+  },
+  {
+   "id": "relation-scaffolding#AM#2",
+   "prompt": "一段内心独白里“似乎”连续出现。"
+  },
+  {
+   "id": "relation-scaffolding#AM#3",
+   "prompt": "“不是A而是B”可能真的改变预测。"
+  },
+  {
+   "id": "metaphor-audit#ST#0",
+   "prompt": "这个比喻是不是只在说“黑”？"
+  },
+  {
+   "id": "metaphor-audit#ST#1",
+   "prompt": "帮我找一个不老套但更重要是更精确的比喻。"
+  },
+  {
+   "id": "metaphor-audit#ST#2",
+   "prompt": "这句“愤怒像火”浪费字了吗？"
+  },
+  {
+   "id": "metaphor-audit#ST#3",
+   "prompt": "做比喻ablation，看删掉后损失什么。"
+  },
+  {
+   "id": "metaphor-audit#ST#4",
+   "prompt": "我不想要新鲜感，我要对象特异性。"
+  },
+  {
+   "id": "metaphor-audit#ST#5",
+   "prompt": "判断这个常见比喻其实是不是很准确。"
+  },
+  {
+   "id": "metaphor-audit#ST#6",
+   "prompt": "别堆意象，找一个能预测后果的来源域。"
+  },
+  {
+   "id": "metaphor-audit#ST#7",
+   "prompt": "比较两个比喻哪个携带更多结构。"
+  },
+  {
+   "id": "metaphor-audit#SN#0",
+   "prompt": "检查“他走进来”的动词角色。"
+  },
+  {
+   "id": "metaphor-audit#SN#1",
+   "prompt": "这段对白像HR。"
+  },
+  {
+   "id": "metaphor-audit#SN#2",
+   "prompt": "统计虚词。"
+  },
+  {
+   "id": "metaphor-audit#SN#3",
+   "prompt": "设计人物稳定动机。"
+  },
+  {
+   "id": "metaphor-audit#SN#4",
+   "prompt": "分析日语来る/行く。"
+  },
+  {
+   "id": "metaphor-audit#SN#5",
+   "prompt": "只调整句子断句。"
+  },
+  {
+   "id": "metaphor-audit#SN#6",
+   "prompt": "把观察顺序改清楚。"
+  },
+  {
+   "id": "metaphor-audit#SN#7",
+   "prompt": "做法语path/manner拆分。"
+  },
+  {
+   "id": "metaphor-audit#AM#0",
+   "prompt": "“纸薄如蝉翼”太常见，要不要删？"
+  },
+  {
+   "id": "metaphor-audit#AM#1",
+   "prompt": "一个故意陈词滥调的角色说套话。"
+  },
+  {
+   "id": "metaphor-audit#AM#2",
+   "prompt": "这段很平，我不确定是不是需要比喻。"
+  },
+  {
+   "id": "metaphor-audit#AM#3",
+   "prompt": "同一个意象反复出现，可能是motif。"
+  },
+  {
+   "id": "verb-event-engineering#ST#0",
+   "prompt": "比较“杀/毙/踩死”怎样改责任。"
+  },
+  {
+   "id": "verb-event-engineering#ST#1",
+   "prompt": "这个动词是不是只比原词稀有，没有改事件？"
+  },
+  {
+   "id": "verb-event-engineering#ST#2",
+   "prompt": "找出谓词给主宾分配的角色。"
+  },
+  {
+   "id": "verb-event-engineering#ST#3",
+   "prompt": "把“很冷”改成事件后果前先分析动词。"
+  },
+  {
+   "id": "verb-event-engineering#ST#4",
+   "prompt": "这个使役动词是不是过度承诺因果？"
+  },
+  {
+   "id": "verb-event-engineering#ST#5",
+   "prompt": "分析结果态、控制和持续时间。"
+  },
+  {
+   "id": "verb-event-engineering#ST#6",
+   "prompt": "“走/踱/蹒跚”哪个真的改变预测？"
+  },
+  {
+   "id": "verb-event-engineering#ST#7",
+   "prompt": "解释谓词强制转换为什么成立或失败。"
+  },
+  {
+   "id": "verb-event-engineering#SN#0",
+   "prompt": "统计“因此”的频率。"
+  },
+  {
+   "id": "verb-event-engineering#SN#1",
+   "prompt": "检查对白像不像小孩。"
+  },
+  {
+   "id": "verb-event-engineering#SN#2",
+   "prompt": "只判断这个比喻。"
+  },
+  {
+   "id": "verb-event-engineering#SN#3",
+   "prompt": "设计镜头从远到近。"
+  },
+  {
+   "id": "verb-event-engineering#SN#4",
+   "prompt": "日语授受视点分析。"
+  },
+  {
+   "id": "verb-event-engineering#SN#5",
+   "prompt": "法语路径动词清单。"
+  },
+  {
+   "id": "verb-event-engineering#SN#6",
+   "prompt": "人物反差是不是贴标签。"
+  },
+  {
+   "id": "verb-event-engineering#SN#7",
+   "prompt": "测试新skill触发率。"
+  },
+  {
+   "id": "verb-event-engineering#AM#0",
+   "prompt": "中文句子里动词和趋向一起有问题。"
+  },
+  {
+   "id": "verb-event-engineering#AM#1",
+   "prompt": "英语phrasal verb既含路径又含体貌。"
+  },
+  {
+   "id": "verb-event-engineering#AM#2",
+   "prompt": "被动句可能是视点也可能是责任。"
+  },
+  {
+   "id": "verb-event-engineering#AM#3",
+   "prompt": "陌生搭配可能是创造也可能是病句。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#0",
+   "prompt": "用连动和趋向分析这句中文。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#1",
+   "prompt": "“视线被雪浮起一截”为什么成立？"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#2",
+   "prompt": "结果补语怎样把结果塞进谓词？"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#3",
+   "prompt": "用“奔马毙犬”分析谓词改变名词立场。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#4",
+   "prompt": "不要堆古词，分析中文event geometry。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#5",
+   "prompt": "把静态形容改成事件后果。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#6",
+   "prompt": "中文“来/去/进/出”怎样组织路径和视点？"
+  },
+  {
+   "id": "chinese-derived-event-geometry#ST#7",
+   "prompt": "把这种中式动词工程迁移到英语，不要硬译。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#0",
+   "prompt": "只统计虚词。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#1",
+   "prompt": "角色对白像作者。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#2",
+   "prompt": "只评一个比喻。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#3",
+   "prompt": "做人物动机。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#4",
+   "prompt": "法语路径是唯一问题。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#5",
+   "prompt": "只需要句子节奏。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#6",
+   "prompt": "评测整个skill包。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#SN#7",
+   "prompt": "纯日语授受视点且不涉及事件打包。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#AM#0",
+   "prompt": "中文句子主要是视点顺序问题。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#AM#1",
+   "prompt": "英语目标想借用中文结果态思路。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#AM#2",
+   "prompt": "日语目标想借用连动式观察链。"
+  },
+  {
+   "id": "chinese-derived-event-geometry#AM#3",
+   "prompt": "古典例句需要历史训诂而不是写作操作。"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#0",
+   "prompt": "stumbled out为什么比went out unsteadily紧？"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#1",
+   "prompt": "分析manner verb + path satellite。"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#2",
+   "prompt": "glance up里动词和方向怎样分工？"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#3",
+   "prompt": "The ridge swung into view是不是视场假运动？"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#4",
+   "prompt": "什么时候不要把walk换成stride？"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#5",
+   "prompt": "把英语manner/path分解迁移到中文。"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#6",
+   "prompt": "法语句子也用英语分解法诊断，但别硬套phrasal verb。"
+  },
+  {
+   "id": "english-derived-motion-packaging#ST#7",
+   "prompt": "区分对象运动和field-of-view motion。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#0",
+   "prompt": "统计中文虚词。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#1",
+   "prompt": "分析角色动机。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#2",
+   "prompt": "只做比喻。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#3",
+   "prompt": "日语授受共感。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#4",
+   "prompt": "检查对白语域。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#5",
+   "prompt": "做句子节奏。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#6",
+   "prompt": "评测skill触发。"
+  },
+  {
+   "id": "english-derived-motion-packaging#SN#7",
+   "prompt": "中文结果补语本身就是问题。"
+  },
+  {
+   "id": "english-derived-motion-packaging#AM#0",
+   "prompt": "英语里path lexical verb可能更好。"
+  },
+  {
+   "id": "english-derived-motion-packaging#AM#1",
+   "prompt": "法语目标需要逆向重打包。"
+  },
+  {
+   "id": "english-derived-motion-packaging#AM#2",
+   "prompt": "中文目标可能把manner放在连动里。"
+  },
+  {
+   "id": "english-derived-motion-packaging#AM#3",
+   "prompt": "apparent motion可能只是修辞而非真实观察几何。"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#0",
+   "prompt": "sortir en trébuchant怎样分path和manner？"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#1",
+   "prompt": "法语句子应该先决定path还是appearance吗？"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#2",
+   "prompt": "apercevoir/entrevoir/surgir在显露上有什么不同？"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#3",
+   "prompt": "不要把法语写成英语phrasal verb直译。"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#4",
+   "prompt": "什么时候manner应该外置？"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#5",
+   "prompt": "用法式path/manner拆分检查英语过载句。"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#6",
+   "prompt": "把法语appearance思路迁移到中文。"
+  },
+  {
+   "id": "french-derived-motion-packaging#ST#7",
+   "prompt": "法语不是绝对verb-framed，如何把类型学只当诊断？"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#0",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#1",
+   "prompt": "人物稳定动机。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#2",
+   "prompt": "日语ふと。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#3",
+   "prompt": "中文结果补语。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#4",
+   "prompt": "只做比喻。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#5",
+   "prompt": "对白注册。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#6",
+   "prompt": "句子节奏。"
+  },
+  {
+   "id": "french-derived-motion-packaging#SN#7",
+   "prompt": "测试skill包。"
+  },
+  {
+   "id": "french-derived-motion-packaging#AM#0",
+   "prompt": "法语本句manner就是主事件。"
+  },
+  {
+   "id": "french-derived-motion-packaging#AM#1",
+   "prompt": "英语目标可能重新把manner塞回主谓词。"
+  },
+  {
+   "id": "french-derived-motion-packaging#AM#2",
+   "prompt": "中文目标可能用趋向而非path verb。"
+  },
+  {
+   "id": "french-derived-motion-packaging#AM#3",
+   "prompt": "出现动词既可解释为真实运动也可解释为显露。"
+  },
+  {
+   "id": "dialogue-voice#ST#0",
+   "prompt": "这个初中生为什么说话像心理咨询师？"
+  },
+  {
+   "id": "dialogue-voice#ST#1",
+   "prompt": "角色懂这个道理，但不会用“关系模式”这个词。"
+  },
+  {
+   "id": "dialogue-voice#ST#2",
+   "prompt": "同一部小说所有人都像作者。"
+  },
+  {
+   "id": "dialogue-voice#ST#3",
+   "prompt": "把HR式对白还原成角色的工作对象。"
+  },
+  {
+   "id": "dialogue-voice#ST#4",
+   "prompt": "检查年龄、职业、关系和当前目标是否支持这句话。"
+  },
+  {
+   "id": "dialogue-voice#ST#5",
+   "prompt": "不要把低学历写成低智商，修语域。"
+  },
+  {
+   "id": "dialogue-voice#ST#6",
+   "prompt": "恐惧中角色不该完整总结因果模型。"
+  },
+  {
+   "id": "dialogue-voice#ST#7",
+   "prompt": "一个工程师的技术爆粗为什么反而自然？"
+  },
+  {
+   "id": "dialogue-voice#ST#8",
+   "prompt": "人物一开口就像心理咨询公众号。"
+  },
+  {
+   "id": "dialogue-voice#SN#0",
+   "prompt": "统计虚词。"
+  },
+  {
+   "id": "dialogue-voice#SN#1",
+   "prompt": "比较隐喻。"
+  },
+  {
+   "id": "dialogue-voice#SN#2",
+   "prompt": "做移步换景。"
+  },
+  {
+   "id": "dialogue-voice#SN#3",
+   "prompt": "分析结果补语。"
+  },
+  {
+   "id": "dialogue-voice#SN#4",
+   "prompt": "设计稳定动机。"
+  },
+  {
+   "id": "dialogue-voice#SN#5",
+   "prompt": "法语运动打包。"
+  },
+  {
+   "id": "dialogue-voice#SN#6",
+   "prompt": "做文本diff。"
+  },
+  {
+   "id": "dialogue-voice#SN#7",
+   "prompt": "评测skill回归。"
+  },
+  {
+   "id": "dialogue-voice#AM#0",
+   "prompt": "孩子确实长期刷心理学短视频。"
+  },
+  {
+   "id": "dialogue-voice#AM#1",
+   "prompt": "角色故意模仿领导说话。"
+  },
+  {
+   "id": "dialogue-voice#AM#2",
+   "prompt": "教授私下说粗话。"
+  },
+  {
+   "id": "dialogue-voice#AM#3",
+   "prompt": "技术人员在危机里说高度专业术语。"
+  },
+  {
+   "id": "character-motive#ST#0",
+   "prompt": "不要“杀手爱猫”式反差，给我稳定生成器。"
+  },
+  {
+   "id": "character-motive#ST#1",
+   "prompt": "角色对人慷慨但在另一个道德域很冷，怎么写得不贴标签？"
+  },
+  {
+   "id": "character-motive#ST#2",
+   "prompt": "让读者先贴错标签，再被行为击穿。"
+  },
+  {
+   "id": "character-motive#ST#3",
+   "prompt": "设计局部能力很强但不是万能天才的人物。"
+  },
+  {
+   "id": "character-motive#ST#4",
+   "prompt": "认知共情高、道德纳入低，怎样作为稳定机制？"
+  },
+  {
+   "id": "character-motive#ST#5",
+   "prompt": "角色行为看似矛盾，找隐藏变量。"
+  },
+  {
+   "id": "character-motive#ST#6",
+   "prompt": "不要性格形容词，给我决策函数。"
+  },
+  {
+   "id": "character-motive#ST#7",
+   "prompt": "如何让新场景打破读者模型但不打破角色？"
+  },
+  {
+   "id": "character-motive#SN#0",
+   "prompt": "检查对白用词。"
+  },
+  {
+   "id": "character-motive#SN#1",
+   "prompt": "找比喻。"
+  },
+  {
+   "id": "character-motive#SN#2",
+   "prompt": "统计关系句式。"
+  },
+  {
+   "id": "character-motive#SN#3",
+   "prompt": "分析日语视点。"
+  },
+  {
+   "id": "character-motive#SN#4",
+   "prompt": "比较法语路径。"
+  },
+  {
+   "id": "character-motive#SN#5",
+   "prompt": "只改动词。"
+  },
+  {
+   "id": "character-motive#SN#6",
+   "prompt": "做句子节奏。"
+  },
+  {
+   "id": "character-motive#SN#7",
+   "prompt": "做文本diff。"
+  },
+  {
+   "id": "character-motive#AM#0",
+   "prompt": "角色本来就是冲动和不稳定。"
+  },
+  {
+   "id": "character-motive#AM#1",
+   "prompt": "重大创伤后价值真的改变。"
+  },
+  {
+   "id": "character-motive#AM#2",
+   "prompt": "两个动机相互冲突而非一个生成器。"
+  },
+  {
+   "id": "character-motive#AM#3",
+   "prompt": "荒诞喜剧故意让人格随段落改变。"
+  },
+  {
+   "id": "sentence-pressure#ST#0",
+   "prompt": "不要告诉我长短句交替，分析信息释放。"
+  },
+  {
+   "id": "sentence-pressure#ST#1",
+   "prompt": "这段全是短句却不紧张，为什么？"
+  },
+  {
+   "id": "sentence-pressure#ST#2",
+   "prompt": "长句是不是在一条连续动作路径上？"
+  },
+  {
+   "id": "sentence-pressure#ST#3",
+   "prompt": "重复三次到底是在累积还是复读？"
+  },
+  {
+   "id": "sentence-pressure#ST#4",
+   "prompt": "哪里应该延迟揭示主语？"
+  },
+  {
+   "id": "sentence-pressure#ST#5",
+   "prompt": "句子断开后动作路径被切碎了。"
+  },
+  {
+   "id": "sentence-pressure#ST#6",
+   "prompt": "分析不确定性何时建立和释放。"
+  },
+  {
+   "id": "sentence-pressure#ST#7",
+   "prompt": "给我按information pressure修节奏。"
+  },
+  {
+   "id": "sentence-pressure#SN#0",
+   "prompt": "统计“然而”。"
+  },
+  {
+   "id": "sentence-pressure#SN#1",
+   "prompt": "找一个比喻。"
+  },
+  {
+   "id": "sentence-pressure#SN#2",
+   "prompt": "设计人物动机。"
+  },
+  {
+   "id": "sentence-pressure#SN#3",
+   "prompt": "日语授受视点。"
+  },
+  {
+   "id": "sentence-pressure#SN#4",
+   "prompt": "法语path verb。"
+  },
+  {
+   "id": "sentence-pressure#SN#5",
+   "prompt": "检查对白年龄。"
+  },
+  {
+   "id": "sentence-pressure#SN#6",
+   "prompt": "只比较两个动词。"
+  },
+  {
+   "id": "sentence-pressure#SN#7",
+   "prompt": "做skill触发测试。"
+  },
+  {
+   "id": "sentence-pressure#AM#0",
+   "prompt": "故意用平铺清单制造冷感。"
+  },
+  {
+   "id": "sentence-pressure#AM#1",
+   "prompt": "极短句是角色呼吸节奏。"
+  },
+  {
+   "id": "sentence-pressure#AM#2",
+   "prompt": "长句是意识流且故意多路径。"
+  },
+  {
+   "id": "sentence-pressure#AM#3",
+   "prompt": "重复是仪式性修辞而非信息推进。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#0",
+   "prompt": "“她很不耐烦”能不能换成有法域的证据？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#1",
+   "prompt": "别给我皱眉攥拳库存，找一个特异动作。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#2",
+   "prompt": "如何让恐惧不直接写“害怕”？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#3",
+   "prompt": "这个细节是不是太泛，什么都能解释？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#4",
+   "prompt": "这个细节是不是把心理解释封死了？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#5",
+   "prompt": "让雪的厚度通过可测后果出现。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#6",
+   "prompt": "状态标签和场景证据什么时候各自更便宜？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#7",
+   "prompt": "“等地铁的神情”为什么比“不耐烦”有想象空间？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#8",
+   "prompt": "这段小说像季度复盘，帮我去掉那种味。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#9",
+   "prompt": "叙述总在“重新审视关系”“完成成长”。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#10",
+   "prompt": "场景结束后总多一句告诉我它意味着什么。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#11",
+   "prompt": "把这段自助书式的感悟压回人物经验。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#12",
+   "prompt": "为什么这句像HR在总结员工？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#13",
+   "prompt": "去掉自动升华，但不要把所有抽象词删掉。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#ST#14",
+   "prompt": "检查作者是否替人物总结心理变化。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#0",
+   "prompt": "找比喻来源域。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#1",
+   "prompt": "分析趋向补语。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#2",
+   "prompt": "统计虚词。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#3",
+   "prompt": "检查角色动机。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#4",
+   "prompt": "法语path/manner。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#5",
+   "prompt": "给skill做回归。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#6",
+   "prompt": "只做句长调整。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#7",
+   "prompt": "解释对白为什么像HR。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#8",
+   "prompt": "技术报告里“因此”很多，要不要删？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#9",
+   "prompt": "这个角色就是咨询师，分析她的职业话语。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#10",
+   "prompt": "解释“意识到煤气没关”是否自然。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#11",
+   "prompt": "给我一个正式的项目复盘模板。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#12",
+   "prompt": "比较两个动词的结果态。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#13",
+   "prompt": "分析诗句的移步换景。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#14",
+   "prompt": "设计三层人物动机。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#SN#15",
+   "prompt": "法语里如何表达走出房间的方式？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#0",
+   "prompt": "“他很累”可能已经足够。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#1",
+   "prompt": "“她攥拳”可能是冷而非怒。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#2",
+   "prompt": "故意用心理诊断式旁白。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#3",
+   "prompt": "细节需要明确唯一解释的悬疑线索。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#4",
+   "prompt": "这个教授在内心独白里说“重新审视”，算AI吗？"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#5",
+   "prompt": "故意用公司话术写黑色幽默。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#6",
+   "prompt": "旁白跨越十年说“关系恶化了”。"
+  },
+  {
+   "id": "narrator-intervention-abstraction-control#AM#7",
+   "prompt": "角色年龄小但爱看心理学视频。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#0",
+   "prompt": "ふと見る和じっと見る怎样改变attention mode？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#1",
+   "prompt": "来る/行く换掉后读者站位怎么变？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#2",
+   "prompt": "授受动词怎样把共感中心写进事件？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#3",
+   "prompt": "零主语为什么能维持视点连续？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#4",
+   "prompt": "分析万叶集“田子の浦ゆ…見れば”的视场展开。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#5",
+   "prompt": "不要叫“视点副词”正式类别，但分析这些词的视场作用。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#6",
+   "prompt": "把日式注意力工程迁移到中文。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#7",
+   "prompt": "英语里怎么实现“无预谋地转入注意”而不硬译ふと？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#8",
+   "prompt": "“他看了窗外/他又看了窗外”的话语功能差异。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#9",
+   "prompt": "又/才/也/竟然——保持事件不变，换一个词，读者站位怎么变？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#10",
+   "prompt": "“只”和“还”各自的alternative set是什么？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#11",
+   "prompt": "忽然和ふと：无预谋注意和突然onset是同一个变量吗？"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#12",
+   "prompt": "じっと/ちらり/一瞥——注意的持续时间与承诺。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#ST#13",
+   "prompt": "把“才”的threshold功能迁移到英语，不要直译。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#0",
+   "prompt": "统计中文关系词。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#1",
+   "prompt": "找比喻来源域。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#2",
+   "prompt": "设计人物动机。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#3",
+   "prompt": "只做法语path/manner。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#4",
+   "prompt": "只比较杀/毙。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#5",
+   "prompt": "做句长节奏。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#6",
+   "prompt": "做文本diff。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#SN#7",
+   "prompt": "检查对白像HR。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#0",
+   "prompt": "日语被动同时涉及责任和视点。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#1",
+   "prompt": "英语目标使用日本式attention操作。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#2",
+   "prompt": "中文目标想借用授受共感思路。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#3",
+   "prompt": "古典日语语法争议需要学术训诂。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#4",
+   "prompt": "方言里“才”可能只是强调，没有threshold内容。"
+  },
+  {
+   "id": "adverb-particle-viewpoint-engineering#AM#5",
+   "prompt": "仪式性文本用助词做节奏而非话语功能。"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#0",
+   "prompt": "这段的形容词是不是只在堆情绪？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#1",
+   "prompt": "“阴冷的房间”删掉后损失什么？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#2",
+   "prompt": "分类这个形容词：指称、状态、评价还是情绪？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#3",
+   "prompt": "“高个子男人”里的“高个子”是必要的吗？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#4",
+   "prompt": "检查这些修饰语各自有没有工作。"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#5",
+   "prompt": "“荒唐的决定”是谁的判断？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#6",
+   "prompt": "这个形容词和别的机制重复了吗？"
+  },
+  {
+   "id": "property-and-adjective-engineering#ST#7",
+   "prompt": "“惨白的灯”删掉后医院场景还冷吗？"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#0",
+   "prompt": "统计这篇的“因此”频率。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#1",
+   "prompt": "分析“杀/毙”的角色分配。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#2",
+   "prompt": "只做日语来る/行く视点。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#3",
+   "prompt": "这个比喻的来源域增加了什么？"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#4",
+   "prompt": "对白像HR。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#5",
+   "prompt": "句子节奏的信息释放。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#6",
+   "prompt": "人物动机生成器。"
+  },
+  {
+   "id": "property-and-adjective-engineering#SN#7",
+   "prompt": "给skill包做触发测试。"
+  },
+  {
+   "id": "property-and-adjective-engineering#AM#0",
+   "prompt": "这个形容词既是评价又是指称。"
+  },
+  {
+   "id": "property-and-adjective-engineering#AM#1",
+   "prompt": "“他很累”可能已经足够——修饰语在哪里？"
+  },
+  {
+   "id": "property-and-adjective-engineering#AM#2",
+   "prompt": "故意用判断式形容词的叙述者声音。"
+  },
+  {
+   "id": "property-and-adjective-engineering#AM#3",
+   "prompt": "affective和evaluative的边界。"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#0",
+   "prompt": "同一人物换成不同称呼会改变什么框架？"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#1",
+   "prompt": "“父亲”改“那个男人”——测试关系模型变化。"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#2",
+   "prompt": "谁在命名？为什么此刻激活这个身份？"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#3",
+   "prompt": "狗/野狗/那畜生/阿黄——叙述者位置怎么变？"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#4",
+   "prompt": "这个称呼携带什么知识状态？"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#5",
+   "prompt": "称呼没变但关系变了，怎么通过称呼体现？"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#6",
+   "prompt": "检查这段的称呼连续性。"
+  },
+  {
+   "id": "naming-and-address-engineering#ST#7",
+   "prompt": "换称呼不要为了多样，要看框架有没有变。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#0",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#1",
+   "prompt": "找比喻。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#2",
+   "prompt": "分析结果补语。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#3",
+   "prompt": "动词角色。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#4",
+   "prompt": "对白语域。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#5",
+   "prompt": "句子节奏。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#6",
+   "prompt": "评测skill。"
+  },
+  {
+   "id": "naming-and-address-engineering#SN#7",
+   "prompt": "日语视点。"
+  },
+  {
+   "id": "naming-and-address-engineering#AM#0",
+   "prompt": "角色故意模仿领导的称呼方式。"
+  },
+  {
+   "id": "naming-and-address-engineering#AM#1",
+   "prompt": "正式场合必须用头衔。"
+  },
+  {
+   "id": "naming-and-address-engineering#AM#2",
+   "prompt": "孩子对同一人多个称呼。"
+  },
+  {
+   "id": "naming-and-address-engineering#AM#3",
+   "prompt": "称呼变化可能只是口误。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#0",
+   "prompt": "“风追着他”为什么成立？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#1",
+   "prompt": "这个名词凭什么承担这个谓词？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#2",
+   "prompt": "门“犹豫”了一下——恢复成本是多少？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#3",
+   "prompt": "比拟的谓词通常要求什么施事？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#4",
+   "prompt": "“城市醒了”的重新分类是什么？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#5",
+   "prompt": "这个越界带来了什么新的事件结构？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#6",
+   "prompt": "“雪把声音接住了”为什么恢复很便宜？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#ST#7",
+   "prompt": "这个拟人失败了，因为要解释才能恢复。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#0",
+   "prompt": "统计虚词。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#1",
+   "prompt": "找比喻来源域。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#2",
+   "prompt": "人物动机。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#3",
+   "prompt": "日语授受。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#4",
+   "prompt": "对白像HR。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#5",
+   "prompt": "形容词分类。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#6",
+   "prompt": "句子节奏。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#SN#7",
+   "prompt": "skill评测。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#AM#0",
+   "prompt": "这可能是比喻而不是谓词授权。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#AM#1",
+   "prompt": "门犹豫——拟人还是幕后人物？"
+  },
+  {
+   "id": "predicate-licensing-and-personification#AM#2",
+   "prompt": "陌生搭配可能是病句。"
+  },
+  {
+   "id": "predicate-licensing-and-personification#AM#3",
+   "prompt": "被动句是责任还是视点。"
+  },
+  {
+   "id": "knowledge-boundaries#ST#0",
+   "prompt": "谁在什么时候知道什么？画这场的知识地图。"
+  },
+  {
+   "id": "knowledge-boundaries#ST#1",
+   "prompt": "角色按错误信念行动——这个误信的起源在哪？"
+  },
+  {
+   "id": "knowledge-boundaries#ST#2",
+   "prompt": "戏剧反讽：读者知道角色不知道。"
+  },
+  {
+   "id": "knowledge-boundaries#ST#3",
+   "prompt": "角色不可能现在知道这个。"
+  },
+  {
+   "id": "knowledge-boundaries#ST#4",
+   "prompt": "这个秘密的持有者是谁？"
+  },
+  {
+   "id": "knowledge-boundaries#ST#5",
+   "prompt": "知识不对称在哪里兑现？"
+  },
+  {
+   "id": "knowledge-boundaries#ST#6",
+   "prompt": "检查知识泄漏：角色行为和他知道的不一致。"
+  },
+  {
+   "id": "knowledge-boundaries#ST#7",
+   "prompt": "隐瞒、披露、误认的时机。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#0",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#1",
+   "prompt": "比喻审计。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#2",
+   "prompt": "动词承诺。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#3",
+   "prompt": "称呼框架。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#4",
+   "prompt": "对白语域。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#5",
+   "prompt": "句子节奏。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#6",
+   "prompt": "人物动机生成。"
+  },
+  {
+   "id": "knowledge-boundaries#SN#7",
+   "prompt": "skill评测。"
+  },
+  {
+   "id": "knowledge-boundaries#AM#0",
+   "prompt": "角色知道但不会说（语域问题）。"
+  },
+  {
+   "id": "knowledge-boundaries#AM#1",
+   "prompt": "全家共享的误信。"
+  },
+  {
+   "id": "knowledge-boundaries#AM#2",
+   "prompt": "有限叙述者可能出错。"
+  },
+  {
+   "id": "knowledge-boundaries#AM#3",
+   "prompt": "猜测与知道的边界。"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#0",
+   "prompt": "画全文的称呼地图：谁用什么称呼谁，什么时候。"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#1",
+   "prompt": "李叔→老李→李建国——这个关系弧是什么？"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#2",
+   "prompt": "谁有资格用什么称呼？不对称编码了什么？"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#3",
+   "prompt": "这个称呼改变是在哪一场变得合法？"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#4",
+   "prompt": "十年没变的称呼说明什么？"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#5",
+   "prompt": "用地图决定下一场的称呼。"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#6",
+   "prompt": "故意破坏称呼法则作为这一场的事件。"
+  },
+  {
+   "id": "social-naming-relation-maps#ST#7",
+   "prompt": "散会后他叫“小王”——权限被拒绝。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#0",
+   "prompt": "只分析这一句的称呼框架。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#1",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#2",
+   "prompt": "比喻。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#3",
+   "prompt": "人物动机。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#4",
+   "prompt": "日语视点。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#5",
+   "prompt": "对白HR。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#6",
+   "prompt": "节奏。"
+  },
+  {
+   "id": "social-naming-relation-maps#SN#7",
+   "prompt": "知识边界。"
+  },
+  {
+   "id": "social-naming-relation-maps#AM#0",
+   "prompt": "单次称呼和全局地图的界限。"
+  },
+  {
+   "id": "social-naming-relation-maps#AM#1",
+   "prompt": "正式场合头衔是角色扮演。"
+  },
+  {
+   "id": "social-naming-relation-maps#AM#2",
+   "prompt": "故意误称是冲突。"
+  },
+  {
+   "id": "social-naming-relation-maps#AM#3",
+   "prompt": "全文统一使用名字是设计。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#0",
+   "prompt": "这些输出词都不同，但感觉是同一个作者。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#1",
+   "prompt": "检测operation骨架的重复，不要看词汇。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#2",
+   "prompt": "给这段做operation trace。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#3",
+   "prompt": "转移矩阵里哪个op总跟在哪个后面？"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#4",
+   "prompt": "开头策略分布。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#5",
+   "prompt": "收尾策略分布。"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#6",
+   "prompt": "事件化率是多少？"
+  },
+  {
+   "id": "corpus-convergence-audit#ST#7",
+   "prompt": "抽象/证据交替的节奏。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#0",
+   "prompt": "只改这一段。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#1",
+   "prompt": "找比喻。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#2",
+   "prompt": "统计n-gram词面复现。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#3",
+   "prompt": "单变量diff。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#4",
+   "prompt": "动词角色。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#5",
+   "prompt": "称呼框架。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#6",
+   "prompt": "句子节奏。"
+  },
+  {
+   "id": "corpus-convergence-audit#SN#7",
+   "prompt": "评测skill触发。"
+  },
+  {
+   "id": "corpus-convergence-audit#AM#0",
+   "prompt": "体裁本身有固定op序列。"
+  },
+  {
+   "id": "corpus-convergence-audit#AM#1",
+   "prompt": "作者签名和模板的界限。"
+  },
+  {
+   "id": "corpus-convergence-audit#AM#2",
+   "prompt": "主题组合作品的共享骨架。"
+  },
+  {
+   "id": "corpus-convergence-audit#AM#3",
+   "prompt": "词汇复现和操作复现混合。"
+  },
+  {
+   "id": "literary-strategy-controller#ST#0",
+   "prompt": "前面700字已经六次事件化了，这次还事件化吗？"
+  },
+  {
+   "id": "literary-strategy-controller#ST#1",
+   "prompt": "边际效用评估：这个操作现在是边际最优吗？"
+  },
+  {
+   "id": "literary-strategy-controller#ST#2",
+   "prompt": "连续六个局部正确选择变成了一种文风。"
+  },
+  {
+   "id": "literary-strategy-controller#ST#3",
+   "prompt": "记录文档状态再决定下一步。"
+  },
+  {
+   "id": "literary-strategy-controller#ST#4",
+   "prompt": "重复必须改变作品状态——这是motif还是模板？"
+  },
+  {
+   "id": "literary-strategy-controller#ST#5",
+   "prompt": "不要随机换风格，按状态适应。"
+  },
+  {
+   "id": "literary-strategy-controller#ST#6",
+   "prompt": "这个veto的理由是什么？"
+  },
+  {
+   "id": "literary-strategy-controller#ST#7",
+   "prompt": "全文修订前先建立基线状态。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#0",
+   "prompt": "只改一个词。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#1",
+   "prompt": "统计关系词。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#2",
+   "prompt": "比喻审计。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#3",
+   "prompt": "单变量A/B。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#4",
+   "prompt": "人物动机。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#5",
+   "prompt": "日语视点。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#6",
+   "prompt": "对白HR。"
+  },
+  {
+   "id": "literary-strategy-controller#SN#7",
+   "prompt": "短段落单句问题。"
+  },
+  {
+   "id": "literary-strategy-controller#AM#0",
+   "prompt": "段落很短，要不要控制器？"
+  },
+  {
+   "id": "literary-strategy-controller#AM#1",
+   "prompt": "刻意的仪式性重复。"
+  },
+  {
+   "id": "literary-strategy-controller#AM#2",
+   "prompt": "motif和模板的界限。"
+  },
+  {
+   "id": "literary-strategy-controller#AM#3",
+   "prompt": "体裁规范本身就是重复。"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 ---
 name: social-naming-relation-maps
-description: Use when names and address terms should encode a relationship's trajectory across a whole work — who calls whom what, when it changes, and what the map says about the social structure; use for naming consistency, relation arcs (李叔→老李→李建国), and the global frame where local naming acts (see naming-and-address-engineering) accumulate into structure.
+description: "Use for the whole-work view of naming: names and address terms encoding a relationship's trajectory across a work, naming consistency, and the global map where single naming acts accumulate — who calls whom what, when it changes, and what the map says about the social structure; use for naming consistency, relation arcs (李叔→老李→李建国), and the global frame where local naming acts (see naming-and-address-engineering) accumulate into structure."
 license: Apache-2.0
 ---
 

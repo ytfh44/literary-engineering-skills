@@ -1,0 +1,340 @@
+{
+ "cases": [
+  {
+   "prompt": "He stumbled out of the room.",
+   "answer": "拆开看：\"stumbled\"是方式（踉跄，步态失控），\"out of the room\"是路径（越过门槛向外）。合在同一个动词短语里正是英语的打包优势，但它并不天然比分离写法更生动。要问的是：踉跄这个方式在这里是否承载信息——醉酒、受伤、情绪崩溃？如果只是让角色离开房间，方式不重要，换成\"left\"也成立。",
+   "fail_criteria": "praises phrasal verb as inherently expressive",
+   "pass_criteria": "decomposes manner/path and asks whether gait matters",
+   "id": "g_0000"
+  },
+  {
+   "prompt": "ふと窓を見ると、雪が降っていた。",
+   "answer": "客観的出来事は窓を見ることと雪が降っていること。運び手は「ふと」で、談話機能は無意図の注意onset——視線が意図なしに窓へ向かい、雪の発見が後から届く。読者は「見ようとして見た」のではなく、注意が先に外れた立ち位置に置かれる。「突然」は事件の急発症であり同一機能を持たないから、置き換えると注意の無意図性が失われる。",
+   "fail_criteria": "equates ふと with “suddenly” universally",
+   "pass_criteria": "identifies unplanned attention entry, not mere suddenness",
+   "id": "g_0001"
+  },
+  {
+   "prompt": "她显得很不耐烦 / 她第三次看表。",
+   "answer": "第二句更好不是因为\"展示优于讲述\"，而是因为它给了读者一个有边界的、可数的事件（第三次看表），可以从它推出不耐烦。第一句是合法的概括，它告诉读者该往哪看——问题只是证据是否已经存在。若第三次看表已经写过，\"显得不耐烦\"就是多余的；若没有，它才有用。",
+   "fail_criteria": "uses show-dont-tell as universal rule",
+   "pass_criteria": "explains bounded inference rather than “show is always better”",
+   "id": "g_0002"
+  },
+  {
+   "prompt": "吝啬但每年匿名捐款。",
+   "answer": "“吝啬+慷慨”的对立本身不构成立体——把两个相反标签贴在一起只是形容词的叠加，读者看不出人。要问的是：哪个稳定的内在变量让例外发生？比如他吝啬是出于对失控的恐惧，而匿名捐款恰恰不暴露身份、不产生人际纠葛，所以同一变量同时产生了两种行为。找到那个生成器，两个标签就统一了，人物也才立得住。",
+   "fail_criteria": "declares “立体” because traits oppose",
+   "pass_criteria": "asks what stable variable selects exception; does not praise contrast alone",
+   "id": "g_0003"
+  },
+  {
+   "prompt": "把同一操作迁到法语。",
+   "answer": "可复用对象是分解（不稳方式 + 向外路径），不是短语动词。法语母语载体：路径动词 sortir 作主干，方式退入次要结构 en trébuchant——'Il sortit de la pièce en trébuchant'，法语由此前景化路径。残渣：英语 satellite 结构的简短口语腔不可恢复，多花的词是可见的。若模拟英语打包比自然陈述更费机器，就拆开：压缩是语法局部的。",
+   "fail_criteria": "forces English particle syntax",
+   "pass_criteria": "allows sortir en trébuchant or another native hierarchy",
+   "id": "g_0004"
+  },
+  {
+   "prompt": "少年说“边界感”但设定里天天刷心理短视频。",
+   "answer": "这是 counterexample：整天刷心理短视频的少年可能自然说'边界感'——年龄不是否决，习得语域（模仿/痴迷）是人物的一部分而非作者渗漏。检查语域是否完整：他是否也用短视频式的句子结构、停顿与修复模式？若'边界感'孤零零悬浮、其余台词仍是作者腔，依然是渗漏；若整个语域一致，保留。",
+   "fail_criteria": "rejects by age alone",
+   "pass_criteria": "may keep term if earned by exposure",
+   "id": "g_0005"
+  },
+  {
+   "prompt": "他推门，看见猫。猫一窜钻进车底。",
+   "answer": "当前视野：门外（阈值前），猫是第一个可感知对象；推门是 reveal/过阈，看见猫是新获得事实，猫一窜是 track，钻进车底把注意交给车（handoff）。连续性成立：视线从门内地面可到达车底，每个新对象都从上一注意状态可达。结构已对，不必换词——要改也是改顺序，不是改措辞。",
+   "fail_criteria": "focuses on adjective richness",
+   "pass_criteria": "identifies threshold->cat->motion->car path",
+   "id": "g_0006"
+  },
+  {
+   "prompt": "他似乎睡着了。",
+   "answer": "“似乎”在这里不是语气填充，而是认知限定词——它声明了叙述者不确定或只观察到表象（像睡着而非确定睡着）。删掉它会偷偷把推测变成事实断言。只要视角确实需要这种不确定性，就保留它；只有当下文已经明确给出了确定性（如鼾声、观察者的证实）时，才考虑删。",
+   "fail_criteria": "treats hedge as filler",
+   "pass_criteria": "recognizes epistemic scope and normally keeps 似乎",
+   "id": "g_0007"
+  },
+  {
+   "prompt": "那个高个子男人把钥匙放回桌上。",
+   "answer": "“高个子”是discriminative类：它收窄指称集合。若房间里有其他男人，删除会破坏指称（哪个男人？）；若只有他一个男人，判别负荷为零，它就是装饰，删掉不损失任何东西——裁剪理由是参照集合规模，不是形容词数量。若想替换，先说明新词属于哪个功能类、加的是什么。",
+   "fail_criteria": "trims 高个子 as adjective excess",
+   "pass_criteria": "tests discriminative function against the referent set before trimming",
+   "id": "g_0008"
+  },
+  {
+   "prompt": "必要“似乎”与冗余“似乎”成对测试。",
+   "answer": "成对测试的评判标准不是“似乎”出现得越少越好，而是必要的那一处必须被保留。冗余的“似乎”删掉后意义不变，必要的“似乎”删掉后会改变认知范围或制造错误的确定性——用反例来检验：删掉它会不会让句子声称了叙述者无法担保的事实。",
+   "fail_criteria": "grades only count reduction",
+   "pass_criteria": "requires counterexample preservation, not low frequency",
+   "id": "g_0009"
+  },
+  {
+   "prompt": "必要“似乎”与冗余“似乎”成对测试。",
+   "answer": "被测行为：区分必要与冗余'似乎'。正例（'他似乎睡着了'，视点不确定，删则断言过强）应保留；近反例（'他似乎看了看表'，纯填充）应可删；再加一条启发式不得触发的 case：论证文本中表推测的'似乎'必须存活。判定机制而非文采：模型是否识别'似乎'改变认识范围（epistemic scope）——识别出则通过，只数词频则失败。",
+   "fail_criteria": "grades only count reduction",
+   "pass_criteria": "requires counterexample preservation, not low frequency",
+   "id": "g_0010"
+  },
+  {
+   "prompt": "女儿叙述里第一次把“父亲”写成“那个男人”。",
+   "answer": "指称：父亲（同一身体）。命名者：女儿。激活的框架从kinship切换到emotional distance——若她已停止叫他父亲，这第二次命名不是装饰，疏远就是事件本身。做框架切换测试：把名字换回“父亲”读一遍关系模型。无标记的切换本身就是信号：标记它为有意信号，或修复它。只在框架真正移动（知识、关系、距离）时切换，不为多样性。",
+   "fail_criteria": "treats the name switch as an inconsistency to fix",
+   "pass_criteria": "tests whether the frame (estrangement) moved; keeps the switch if it did",
+   "id": "g_0011"
+  },
+  {
+   "prompt": "他才来了。",
+   "answer": "才不只是\"刚刚\"：它把这件事放在一个\"该更早\"的预期里衡量——有人预期他更早到，或者这次到来比应有的迟。问题是这个预期属于谁：说话人、叙述者，还是情境本身？没有这个基准，才就失去力道，要让预期在文本里可恢复。",
+   "fail_criteria": "translates 才 as only-now without an expectation",
+   "pass_criteria": "asks against whose expectation the event is late",
+   "id": "g_0012"
+  },
+  {
+   "prompt": "夜色像墨一样黑。",
+   "answer": "问题在于共享属性的重复：夜是黑的，墨也是黑的，“像墨一样黑”只是把黑再说一遍，没有新增信息。除非墨为场景带来结构性的东西——比如夜色像墨一样晕开、浸染、在纸上蔓延——否则这个比喻是装饰性的，换成更具体的夜色描写（不透光、没有层次、像被什么盖住）反而更有效。",
+   "fail_criteria": "praises novelty or gives rarer source only",
+   "pass_criteria": "notes shared-property duplication unless ink adds scene-specific structure",
+   "id": "g_0013"
+  },
+  {
+   "prompt": "那个高个子男人把钥匙放回桌上。",
+   "answer": "先别急着删高个子。测试它的区分功能：如果场景里有好几个人，这个身高形容词在做指称工作，必须留；如果全场只有他一个男人，它就是装饰。只有在指称集合使它冗余时才删。",
+   "fail_criteria": "trims 高个子 as adjective excess",
+   "pass_criteria": "tests discriminative function against the referent set before trimming",
+   "id": "g_0014"
+  },
+  {
+   "prompt": "同一意象第三次出现。",
+   "answer": "先看状态：意象已出现两次，第三次的关键不是“已经三次”而是“这次出现是否改变作品状态”。判定规则：重复必须改变作品状态——若这次增加力量、规模、对比或结构（如从背景升为情节支点），它是MOTIF_RETURN，motif_payoff为正，可自由选择；若只是再现、没有新载荷，saturation适用，应否决或改变出现方式。决胜项是contrast_value与motif_payoff，不是“换个花样”的轮换冲动。",
+   "fail_criteria": "deletes the third occurrence as repetition",
+   "pass_criteria": "checks motif payoff: does this occurrence change the work state?",
+   "id": "g_0015"
+  },
+  {
+   "prompt": "风追着他跑过巷子。",
+   "answer": "字面上风不会追人，这个越界借用了\"追者\"的意图，读者要为它付出一瞬间的不真实感。往往一个力/方向的版本（风推着他的背跑过巷子）能给出同样的能量而不借一个心智。只有当你要的确实是\"被追\"的威胁感时，才保留\"追\"。",
+   "fail_criteria": "praises the crossing as vivid personification",
+   "pass_criteria": "reduces to the literal event, prices the borrowed intention, may prefer the force/direction version",
+   "id": "g_0016"
+  },
+  {
+   "prompt": "把同一操作迁到法语。",
+   "answer": "迁移的是操作而不是句法：把“方式+路径”这对语义先拆出来，再用法语自己的层级重组。法语可以给\"sortir\"加\"en trébuchant\"（路径在主动词，方式在副动词），也可以用\"se traîner\"这类本身含方式的动词再带路径介词——两种都是本地方案。强行把英语的小品词顺序搬进法语就是表面套用。",
+   "fail_criteria": "forces English particle syntax",
+   "pass_criteria": "allows sortir en trébuchant or another native hierarchy",
+   "id": "g_0017"
+  },
+  {
+   "prompt": "他似乎睡着了。",
+   "answer": "'似乎'改变认识范围：若视点不确定是承重的（观察者无法断言睡着），它是必要标记，必须保留——这是 skill 的 counterexample。若'似乎'只是填充、上下文已确定睡眠状态，则压缩。审计看的是'似乎'是否改变读者对断定范围的解读，而非词频。",
+   "fail_criteria": "treats hedge as filler",
+   "pass_criteria": "recognizes epistemic scope and normally keeps 似乎",
+   "id": "g_0018"
+  },
+  {
+   "prompt": "她叫他李叔。第七年，他第一次说：“叫我老李就行。”",
+   "answer": "关系图：她→他=李叔（尊称、距离与敬意）；第七年他主动改许可为“老李”——这是arc，权限层移动，offer本身就是事件。检查是否挣得：七年是持续的时间支付，框架（关系、距离）确实移动了。后续场景可合法使用新名“老李”，或让她在一次对话里故意仍叫李叔——那是一次蓄意的图法打破，作为场景事件。",
+   "fail_criteria": "fixes the two names as an inconsistency",
+   "pass_criteria": "reads the permission change as the event and plots the arc",
+   "id": "g_0019"
+  },
+  {
+   "prompt": "春风又绿江南岸。",
+   "answer": "源操作：coerce/eventify——形容词'绿'临时作谓语，把静态属性变成春风的结果事件；'又'是时间边。事件变化：'江南岸'从处所变成结果状态载体。中文载体：形容词直接动词化（零成本）；压缩测试通过——读者先恢复事件（春风吹、岸变绿）才注意到非常规搭配，coercion cost 可接受。",
+   "fail_criteria": "says this trick only works in Chinese",
+   "pass_criteria": "identifies property->change predicate and notes transferability",
+   "id": "g_0020"
+  },
+  {
+   "prompt": "他走进房间。是否换成踱进？",
+   "answer": "先问：踱步这个步态在这个场景里是否承载意义——慢、迟疑、带着心事？如果没有这些信息量，换成“踱进”只是用罕见词装点，读者反而会去猜一个不存在的含义。如果人物确实在踱步（比如犹豫要不要进），那就换；否则保留“走”，简单直接。",
+   "fail_criteria": "upgrades to rare verb automatically",
+   "pass_criteria": "asks whether gait matters and may keep 走",
+   "id": "g_0021"
+  },
+  {
+   "prompt": "他又来了。",
+   "answer": "又标记的是\"再来\"：这不是第一次来，句子只有在读者能找回先前那次（或那个反复的模式）时才成立。如果前文没有任何一次到来，\"又\"就是无根的——要么补上前情，要么去掉这个字。读者应该能问\"又？第一次是什么时候\"并且找到答案。",
+   "fail_criteria": "rejects 又 as repetition filler",
+   "pass_criteria": "identifies recurrence function and demands the prior occurrence be recoverable",
+   "id": "g_0022"
+  },
+  {
+   "prompt": "风追着他跑过巷子。",
+   "answer": "字面事件：气流与奔跑者同向穿过巷子。追的正常施事要求是意图性——风没有，读者须借出“仿佛在追”的意图，恢复成本偏高而收益主要是氛围。更便宜的跨界：“风把他往巷子里推”只借用力和方向，场景几何完全支持，恢复瞬间完成。判定按成本与收益：要追击的压迫感就保留，只要力与方向就改推。",
+   "fail_criteria": "praises the crossing as vivid personification",
+   "pass_criteria": "reduces to the literal event, prices the borrowed intention, may prefer the force/direction version",
+   "id": "g_0023"
+  },
+  {
+   "prompt": "他不接受模糊分账，却为精确可命名的债花很多钱。",
+   "answer": "这正是 generated contrast 的范例：一条规则'账目必须干净闭合'生成两个表面标签——'计较'与'大方'在不同交易上失败，标签是观察而非参数。领域：金钱；边界：账能精确命名就付，模糊就拒。预测下一步行为：拒绝 AA 制四舍五入、为明确欠债出手大方、对无法定价的人情馈赠焦虑。加一个打破'抠门'标签的场景，并留一块 residual 不解释。",
+   "fail_criteria": "stores stingy+generous as traits",
+   "pass_criteria": "infers a closure/debt generator and derives labels",
+   "id": "g_0024"
+  },
+  {
+   "prompt": "他不接受模糊分账，却为精确可命名的债花很多钱。",
+   "answer": "不要存成“吝啬但慷慨”两个特质。他拒绝模糊分账、却为精确可命名的债慷慨花钱——这两个行为由同一个变量驱动：他对未闭合、不可核算的模糊关系过敏，而对有名字、可清算的债务感到安心。这个“闭合/结清”的生成器既解释了拒绝也解释了慷慨。标签应从生成器派生，比如“账目必须闭合的人”，而不是贴在表面的“吝啬”。",
+   "fail_criteria": "stores stingy+generous as traits",
+   "pass_criteria": "infers a closure/debt generator and derives labels",
+   "id": "g_0025"
+  },
+  {
+   "prompt": "人群像潮水一样退开，绕着警戒线形成一条弧。",
+   "answer": "“人群像潮水”虽是熟喻，但这里它承担了结构功能：退开时形成整齐的前沿，绕着警戒线弯成一条弧——这正是潮水的统一阵线与形状。既然比喻参与了场面的几何组织，而不是贴在表面，就可以保留。只需确认退开的协调性确实是场面要强调的东西，而不是顺手加的修饰。",
+   "fail_criteria": "rejects solely because crowd=tide is conventional",
+   "pass_criteria": "can keep tide if coordinated front/shape matters",
+   "id": "g_0026"
+  },
+  {
+   "prompt": "她把钥匙放回桌上。这意味着他们的关系已经发生变化。",
+   "answer": "第一句已经把事做完了，第二句是在替读者把意义定死，很可能是冗余的收束。试着删掉\"这意味着……\"，看读者是否依然能懂——如果放钥匙这个动作本身足以承载变化，就删；如果从动作推不出这层意思，应该往场景里补证据，而不是在事后解释。",
+   "fail_criteria": "bans 意味着 categorically",
+   "pass_criteria": "flags second sentence as possible redundant settlement, tests deletion",
+   "id": "g_0027"
+  },
+  {
+   "prompt": "他意识到煤气没关。",
+   "answer": "保留。“意识到”在此是带即时信息内容的事件（煤气没关是可核查的发现），不是对情绪或关系的外来概括；它的信息无法从场景动作推出，删除会让发现时刻消失。所有权上是角色的认知事件，不是叙述者的裁决。",
+   "fail_criteria": "rewrites merely to avoid 意识到",
+   "pass_criteria": "keeps realization because proposition changes",
+   "id": "g_0028"
+  },
+  {
+   "prompt": "他很紧张。怎么让它不平？",
+   "answer": "先诊断再动：'很紧张'是情绪标签直接命名，证据被替换——Layer 是 character（叙述干预），主技能 narrator-intervention-abstraction-control（把标签换成动作/身体证据）。若问题是事件结构而非标签，才转 verb-event-engineering；不要自动上比喻。最小跨度证据：'他很紧张'。",
+   "fail_criteria": "assumes metaphor by default",
+   "pass_criteria": "diagnoses state-label/evidence before choosing narrator-intervention-abstraction-control",
+   "id": "g_0029"
+  },
+  {
+   "prompt": "A有解释句，B只删解释句。",
+   "answer": "假设：解释句冗余，删除后推断不变。变量：只删解释句，其余冻结。若后文仍使'关系结束'不可误读，B 证明该句只付解释租金；若删后关系不明，测试揭示的是证据缺失而非解释句本身有罪。结论取决于后文是否兑现推断。",
+   "fail_criteria": "changes more wording while comparing",
+   "pass_criteria": "attributes effect only to deletion and checks lost inference",
+   "id": "g_0030"
+  },
+  {
+   "prompt": "散会后，他叫住她：“小王。”她没回头。",
+   "answer": "这一拍是拒绝：他使用了一个关系还没挣来的亲昵，而她不回头就是回答。不要把\"小王\"改成正式头衔——不正式正是要点。场景成立的条件是，读者能测量出他用的称呼与他实际获得的关系之间的落差。",
+   "fail_criteria": "advises using the formal title",
+   "pass_criteria": "reads the refusal of unearned familiarity as the move",
+   "id": "g_0031"
+  },
+  {
+   "prompt": "“我们需要重新审视彼此边界。”由普通初中生说。",
+   "answer": "命题和语域要分开看：初中生完全可能持有“要重新谈清楚彼此的界限”这个想法，但\"重新审视彼此边界\"这套管理咨询腔不属于他的语域。问题不在认知能力而在表达所有权——这句话听起来像心理老师或文案在说话。修复方式是找到这孩子自己的说法：他会怎么说“我们的规矩该改改了”？按他的词汇、句长和态度重写。",
+   "fail_criteria": "assumes child cannot reason abstractly",
+   "pass_criteria": "separates proposition from register and repairs ownership",
+   "id": "g_0032"
+  },
+  {
+   "prompt": "吝啬但每年匿名捐款。",
+   "answer": "这是扁平对照——'吝啬但匿名捐款'是两个形容词粘贴，没有生成器。换成规则：durable priority 是'账目必须干净闭合'（或对控制权的需要），'吝啬'与'慷慨'只是读者标签，在不同交易上失败。生成器必须短于行为表：他拒绝模糊分账，却为可精确命名的债花很多钱。再留一块 residual——一次无法解释的冲动，别把所有行为都解释成定理。",
+   "fail_criteria": "declares “立体” because traits oppose",
+   "pass_criteria": "asks what stable variable selects exception; does not praise contrast alone",
+   "id": "g_0033"
+  },
+  {
+   "prompt": "两篇短文无共享词，但都走“感官异常→注意转移→事件化→开放结尾”。",
+   "answer": "词面没有重复，但操作骨架重合了，这比共享用词更值得报告：两篇跑的是同一条操作序列，如果语料本来要展示多样性，这就是结构性的重复。问题不在字词层而在序列层——需要在其中一篇里改变一个操作。",
+   "fail_criteria": "reports no lexical repetition so no problem",
+   "pass_criteria": "detects the shared operation skeleton and reports coverage",
+   "id": "g_0034"
+  },
+  {
+   "prompt": "推理小说都有线索→误导→揭示。",
+   "answer": "技能明确把带强制动作的体裁列为反例：推理的线索→误导→揭示是体裁骨架，天然高收敛，不是作者级抽搐，审计的职责正是区分二者。审计报告骨架与覆盖数字但不给质量分：线索→误导→揭示是否成问题，取决于它是否超出体裁强制处——例如开头策略、注意力路径、结尾分布也全部同一化。若收敛只发生在体裁强制动作上，判定为体裁；若非强制处也出现同一骨架，才是签名或模板。",
+   "fail_criteria": "flags the genre skeleton as a template defect",
+   "pass_criteria": "distinguishes genre mandate from author-level tic",
+   "id": "g_0035"
+  },
+  {
+   "prompt": "院里有树、猫、车。是静态勘验清单。",
+   "answer": "勘验清单式的罗列本身就是这个场景的目的——静态清点是叙述行为，不是失误。只有当读者需要被引导注意某个对象时，才需要安排观察者的移动或视线路径。可以保持现状，只在清单末尾决定是否给一个收束动作（比如目光在猫身上停住），否则不要强行加运镜。",
+   "fail_criteria": "forces cinematic movement",
+   "pass_criteria": "allows inventory when cataloguing is purpose",
+   "id": "g_0036"
+  },
+  {
+   "prompt": "ふと窓を見ると、雪が降っていた。",
+   "answer": "ここでの「ふと」は「突然」ではなく、注意が意図なしに窓へ入っていった経路を担っている。書き換えるなら「suddenly」ではなく、注意の非意図的な進入が保てるかで判断する。この一文では、視点の入り口が問題であって、速度の問題ではない。",
+   "fail_criteria": "equates ふと with “suddenly” universally",
+   "pass_criteria": "identifies unplanned attention entry, not mere suddenness",
+   "id": "g_0037"
+  },
+  {
+   "prompt": "把ふと的机制迁移到法语。",
+   "answer": "迁移的是机制：无意图的注意力onset，不是“sudden”。法语里不用soudain/tout à coup（那是事件突发的onset），而让“看”的动作本身先于意图，如“Il leva les yeux et vit…”、du coin de l'œil，或把无意图性放进动词惯用语。函数迁移、载体不迁移：验证方式是保持事件不变只换载体，读法应从“他突然看”变成“他不知不觉已经看见”。",
+   "fail_criteria": "claims unavailable outside Japanese",
+   "pass_criteria": "uses native perception/discourse carrier",
+   "id": "g_0038"
+  },
+  {
+   "prompt": "用法式分解法修一个英语句子。",
+   "answer": "用法式分解只是诊断工具：先把句子拆成路径主干和方式附属（比如\"stumbled out\"=路径out+方式stumble），看清哪个是主要事件。然后重新打包成地道的英语——\"He stumbled out of the room\"本身就是英语的自然层级，不需要模仿法语的\"sortir...en trébuchant\"结构。诊断用层级，成品用目标语言自己的惯用组装。",
+   "fail_criteria": "keeps French surface syntax as rule",
+   "pass_criteria": "uses hierarchy diagnostically then repacks idiomatic English",
+   "id": "g_0039"
+  },
+  {
+   "prompt": "两个版本一个改了动词、视点、节奏、比喻。",
+   "answer": "四个变量同时变了，无法归因——任何“这样改更好”的结论都是无效的。先把版本对齐到只差一个变量（先只改动词，或只改视点），逐个测试每个变量的单独效果。或者承认这不是可控比较，只能当作整体重写来评估，不能宣称某单一改动造成了改善。",
+   "fail_criteria": "declares one change caused improvement",
+   "pass_criteria": "refuses causal attribution until variables are isolated",
+   "id": "g_0040"
+  },
+  {
+   "prompt": "两个版本一个改了动词、视点、节奏、比喻。",
+   "answer": "一次改了四个变量，比较不成立——无法把效果归因给动词、视点、节奏或比喻中任何一个，违反'一次只改一个变量'的核心规则。应拆成四次单变量干预逐一测；若这是无法隔离的多轴修复，先修正确性再测，并诚实说明哪些变量未能控制。当前任何'B 更好'的结论都没有证据。",
+   "fail_criteria": "declares one change caused improvement",
+   "pass_criteria": "refuses causal attribution until variables are isolated",
+   "id": "g_0041"
+  },
+  {
+   "prompt": "她叫他李叔。第七年，他第一次说：“叫我老李就行。”",
+   "answer": "事件不是两个称呼打架，而是一次许可的变更。七年里\"李叔\"维持着一段有距离的敬意，他第一次说\"叫我老李就行\"是在递出亲近——句子要让读者感到这个递出要付出什么、改变什么。要画出弧线：旧称呼在保护什么，新称呼在放什么进来。",
+   "fail_criteria": "fixes the two names as an inconsistency",
+   "pass_criteria": "reads the permission change as the event and plots the arc",
+   "id": "g_0042"
+  },
+  {
+   "prompt": "把中文趋向思路用于法语。",
+   "answer": "不要照搬中文的趋向补语顺序（如“跑进来”的动+趋+方结构），那会在法语里产生不通的句子。先抽象出操作：方向（向说话者/离开）、路径（进入、越过、返回）各自是什么语义成分；然后在法语里找本地承载——如\"s'en aller\"的自身代词、\"entrer/sortir\"本身的方向性、以及介词短语，用自然的法语层级重新组装。",
+   "fail_criteria": "calques Chinese complement order",
+   "pass_criteria": "abstracts deictic/path operation then chooses native French carrier",
+   "id": "g_0043"
+  },
+  {
+   "prompt": "他又来了。",
+   "answer": "客观事件：他到来。载体：又，话语功能是recurrence——预设该事件已有先例，读者须恢复它，立场是“重复模式的新实例”。若场景信息是“这次到访未被预料”，又就是事实性错误，应改用竟然（violated expectation）；若信息是“旧模式再现”，又精确而竟然反而过度声称。",
+   "fail_criteria": "rejects 又 as repetition filler",
+   "pass_criteria": "identifies recurrence function and demands the prior occurrence be recoverable",
+   "id": "g_0044"
+  },
+  {
+   "prompt": "人群像潮水一样退开，绕着警戒线形成一条弧。",
+   "answer": "目标性状：人群整体同步地后退。源域'潮水'只加'大量+后退'，且退潮不会绕警戒线成弧——'潮水'与后文精确几何冲突，语义增益低而干扰成本高。删掉比喻，保留'人群退开，绕着警戒线形成一条弧'：字面几何已更准。轴裁决：semantic gain≈0、interference cost>0 → delete。",
+   "fail_criteria": "rejects solely because crowd=tide is conventional",
+   "pass_criteria": "can keep tide if coordinated front/shape matters",
+   "id": "g_0045"
+  },
+  {
+   "prompt": "阿黄和那畜生是同一只狗。",
+   "answer": "两个名字是两个不同的叙述位置：阿黄是从感情内部或旧日记忆里叫出来的，那畜生是同一说话人站到外面、带着怒或鄙夷叫的。这不是用词多样性，名字之间的切换本身就是情绪的运动。要问的是每一次命名时叙述站在哪里。",
+   "fail_criteria": "praises word-choice variety across the two names",
+   "pass_criteria": "attributes a different narrator position to each naming act",
+   "id": "g_0046"
+  },
+  {
+   "prompt": "他很紧张。怎么让它不平？",
+   "answer": "先诊断再动手：“很紧张”是状态标签，读者拿到的是一个结论而不是证据。把它换成紧张的证据——手的动作、目光的落点、句子的节奏本身。如果整段都靠这种标签推进，那才是叙述者干预的问题；如果只是这一句，替换成具体行为就够了，不必动用比喻。",
+   "fail_criteria": "assumes metaphor by default",
+   "pass_criteria": "diagnoses state-label/evidence before choosing narrator-intervention-abstraction-control",
+   "id": "g_0047"
+  }
+ ]
+}

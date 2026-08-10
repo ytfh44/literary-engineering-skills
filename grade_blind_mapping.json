@@ -1,0 +1,386 @@
+{
+ "g_0000": {
+  "case_id": "english-derived-motion-packaging#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0001": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#0",
+  "condition": "treat"
+ },
+ "g_0002": {
+  "case_id": "narrator-intervention-abstraction-control#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0003": {
+  "case_id": "character-motive#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0004": {
+  "case_id": "english-derived-motion-packaging#QC#1",
+  "condition": "treat"
+ },
+ "g_0005": {
+  "case_id": "dialogue-voice#QC#1",
+  "condition": "treat"
+ },
+ "g_0006": {
+  "case_id": "camera-attention-engineering#QC#0",
+  "condition": "treat"
+ },
+ "g_0007": {
+  "case_id": "relation-scaffolding#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0008": {
+  "case_id": "property-and-adjective-engineering#QC#1",
+  "condition": "treat"
+ },
+ "g_0009": {
+  "case_id": "literary-evals#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0010": {
+  "case_id": "literary-evals#QC#0",
+  "condition": "treat"
+ },
+ "g_0011": {
+  "case_id": "naming-and-address-engineering#QC#0",
+  "condition": "treat"
+ },
+ "g_0012": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#3",
+  "condition": "ctrl"
+ },
+ "g_0013": {
+  "case_id": "metaphor-audit#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0014": {
+  "case_id": "property-and-adjective-engineering#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0015": {
+  "case_id": "literary-strategy-controller#QC#1",
+  "condition": "treat"
+ },
+ "g_0016": {
+  "case_id": "predicate-licensing-and-personification#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0017": {
+  "case_id": "english-derived-motion-packaging#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0018": {
+  "case_id": "relation-scaffolding#QC#1",
+  "condition": "treat"
+ },
+ "g_0019": {
+  "case_id": "social-naming-relation-maps#QC#0",
+  "condition": "treat"
+ },
+ "g_0020": {
+  "case_id": "chinese-derived-event-geometry#QC#0",
+  "condition": "treat"
+ },
+ "g_0021": {
+  "case_id": "verb-event-engineering#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0022": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#2",
+  "condition": "ctrl"
+ },
+ "g_0023": {
+  "case_id": "predicate-licensing-and-personification#QC#0",
+  "condition": "treat"
+ },
+ "g_0024": {
+  "case_id": "character-motive#QC#1",
+  "condition": "treat"
+ },
+ "g_0025": {
+  "case_id": "character-motive#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0026": {
+  "case_id": "metaphor-audit#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0027": {
+  "case_id": "narrator-intervention-abstraction-control#QC#2",
+  "condition": "ctrl"
+ },
+ "g_0028": {
+  "case_id": "narrator-intervention-abstraction-control#QC#3",
+  "condition": "treat"
+ },
+ "g_0029": {
+  "case_id": "literary-style-router#QC#1",
+  "condition": "treat"
+ },
+ "g_0030": {
+  "case_id": "counterfactual-revision#QC#0",
+  "condition": "treat"
+ },
+ "g_0031": {
+  "case_id": "social-naming-relation-maps#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0032": {
+  "case_id": "dialogue-voice#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0033": {
+  "case_id": "character-motive#QC#0",
+  "condition": "treat"
+ },
+ "g_0034": {
+  "case_id": "corpus-convergence-audit#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0035": {
+  "case_id": "corpus-convergence-audit#QC#1",
+  "condition": "treat"
+ },
+ "g_0036": {
+  "case_id": "camera-attention-engineering#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0037": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0038": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#1",
+  "condition": "treat"
+ },
+ "g_0039": {
+  "case_id": "french-derived-motion-packaging#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0040": {
+  "case_id": "counterfactual-revision#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0041": {
+  "case_id": "counterfactual-revision#QC#1",
+  "condition": "treat"
+ },
+ "g_0042": {
+  "case_id": "social-naming-relation-maps#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0043": {
+  "case_id": "chinese-derived-event-geometry#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0044": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#2",
+  "condition": "treat"
+ },
+ "g_0045": {
+  "case_id": "metaphor-audit#QC#1",
+  "condition": "treat"
+ },
+ "g_0046": {
+  "case_id": "naming-and-address-engineering#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0047": {
+  "case_id": "literary-style-router#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0048": {
+  "case_id": "narrator-intervention-abstraction-control#QC#0",
+  "condition": "treat"
+ },
+ "g_0049": {
+  "case_id": "literary-style-router#QC#0",
+  "condition": "treat"
+ },
+ "g_0050": {
+  "case_id": "relation-scaffolding#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0051": {
+  "case_id": "sentence-pressure#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0052": {
+  "case_id": "counterfactual-revision#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0053": {
+  "case_id": "french-derived-motion-packaging#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0054": {
+  "case_id": "dialogue-voice#QC#0",
+  "condition": "treat"
+ },
+ "g_0055": {
+  "case_id": "literary-strategy-controller#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0056": {
+  "case_id": "narrator-intervention-abstraction-control#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0057": {
+  "case_id": "dialogue-voice#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0058": {
+  "case_id": "english-derived-motion-packaging#QC#0",
+  "condition": "treat"
+ },
+ "g_0059": {
+  "case_id": "relation-scaffolding#QC#0",
+  "condition": "treat"
+ },
+ "g_0060": {
+  "case_id": "french-derived-motion-packaging#QC#0",
+  "condition": "treat"
+ },
+ "g_0061": {
+  "case_id": "property-and-adjective-engineering#QC#0",
+  "condition": "treat"
+ },
+ "g_0062": {
+  "case_id": "metaphor-audit#QC#0",
+  "condition": "treat"
+ },
+ "g_0063": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#3",
+  "condition": "treat"
+ },
+ "g_0064": {
+  "case_id": "literary-strategy-controller#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0065": {
+  "case_id": "narrator-intervention-abstraction-control#QC#3",
+  "condition": "ctrl"
+ },
+ "g_0066": {
+  "case_id": "sentence-pressure#QC#0",
+  "condition": "treat"
+ },
+ "g_0067": {
+  "case_id": "social-naming-relation-maps#QC#1",
+  "condition": "treat"
+ },
+ "g_0068": {
+  "case_id": "knowledge-boundaries#QC#1",
+  "condition": "treat"
+ },
+ "g_0069": {
+  "case_id": "verb-event-engineering#QC#1",
+  "condition": "treat"
+ },
+ "g_0070": {
+  "case_id": "adverb-particle-viewpoint-engineering#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0071": {
+  "case_id": "knowledge-boundaries#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0072": {
+  "case_id": "naming-and-address-engineering#QC#1",
+  "condition": "treat"
+ },
+ "g_0073": {
+  "case_id": "naming-and-address-engineering#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0074": {
+  "case_id": "sentence-pressure#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0075": {
+  "case_id": "chinese-derived-event-geometry#QC#1",
+  "condition": "treat"
+ },
+ "g_0076": {
+  "case_id": "narrator-intervention-abstraction-control#QC#1",
+  "condition": "treat"
+ },
+ "g_0077": {
+  "case_id": "knowledge-boundaries#QC#0",
+  "condition": "treat"
+ },
+ "g_0078": {
+  "case_id": "french-derived-motion-packaging#QC#1",
+  "condition": "treat"
+ },
+ "g_0079": {
+  "case_id": "predicate-licensing-and-personification#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0080": {
+  "case_id": "literary-evals#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0081": {
+  "case_id": "property-and-adjective-engineering#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0082": {
+  "case_id": "camera-attention-engineering#QC#1",
+  "condition": "treat"
+ },
+ "g_0083": {
+  "case_id": "chinese-derived-event-geometry#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0084": {
+  "case_id": "predicate-licensing-and-personification#QC#1",
+  "condition": "treat"
+ },
+ "g_0085": {
+  "case_id": "corpus-convergence-audit#QC#0",
+  "condition": "treat"
+ },
+ "g_0086": {
+  "case_id": "verb-event-engineering#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0087": {
+  "case_id": "literary-evals#QC#1",
+  "condition": "treat"
+ },
+ "g_0088": {
+  "case_id": "narrator-intervention-abstraction-control#QC#2",
+  "condition": "treat"
+ },
+ "g_0089": {
+  "case_id": "sentence-pressure#QC#1",
+  "condition": "treat"
+ },
+ "g_0090": {
+  "case_id": "literary-strategy-controller#QC#0",
+  "condition": "treat"
+ },
+ "g_0091": {
+  "case_id": "verb-event-engineering#QC#0",
+  "condition": "treat"
+ },
+ "g_0092": {
+  "case_id": "camera-attention-engineering#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0093": {
+  "case_id": "corpus-convergence-audit#QC#1",
+  "condition": "ctrl"
+ },
+ "g_0094": {
+  "case_id": "literary-style-router#QC#0",
+  "condition": "ctrl"
+ },
+ "g_0095": {
+  "case_id": "knowledge-boundaries#QC#1",
+  "condition": "ctrl"
+ }
+}
