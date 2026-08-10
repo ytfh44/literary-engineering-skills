@@ -5,7 +5,7 @@ Prompt-trigger accuracy cannot be measured by static scripts; it must be
 executed by the agent/model that will use the skills (see the literary-evals
 skill). This script packages the two static halves of that eval:
 
-  gen   - emit judge input: all 16 skill descriptions (as injected for
+  gen   - emit judge input: all skill descriptions (as injected for
           discovery) plus every eval_cases.yaml prompt with an id, as JSON.
   score - grade a judge agent's routing JSON against eval_cases.yaml:
           should_trigger must route to the expected skill; should_not_trigger
@@ -16,7 +16,7 @@ Usage:
   python tests/run_trigger_battery.py score <judge_output.json...>
 
 Typical loop: gen -> hand judge_input.json to a fresh agent ("route each id to
-one of these 16 skill names, NONE, or ASK") -> score its output.
+one of the listed skill names, NONE, or ASK") -> score its output.
 """
 from __future__ import annotations
 import json
