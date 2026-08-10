@@ -78,11 +78,11 @@ better than another.
 ## Minimal pair
 
 > 他又来了。
-
+>
 > 他才来了。
-
+>
 > 他也来了。
-
+>
 > 他竟然来了。
 
 Four stances from four particles: recurrence, delayed arrival against

@@ -11,9 +11,8 @@ EXPECTED = [
     'french-derived-motion-packaging','adverb-particle-viewpoint-engineering',
     'property-and-adjective-engineering','naming-and-address-engineering',
     'predicate-licensing-and-personification',
-    'anti-ai-prose','camera-attention-engineering',
-    'sensory-specificity','sentence-pressure-and-rhythm',
-    'dialogue-voice-integrity','character-motive-engineering',
+    'camera-attention-engineering','sentence-pressure','dialogue-voice',
+    'narrator-intervention-abstraction-control','character-motive-engineering',
     'counterfactual-revision','literary-style-router','literary-evals',
 ]
 TRANSFER = {'chinese-derived-event-geometry','english-derived-motion-packaging','french-derived-motion-packaging'}

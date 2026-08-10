@@ -37,6 +37,27 @@ Do not turn prose into screenplay directions. Camera is a discourse model: it tr
 - **freeze** — hold the frame while one variable changes;
 - **cut** — break continuity on purpose.
 
+## Discontinuity is a first-class operation
+
+Continuity is a default, not a law. Deliberate breaks are operations of the
+same rank as reveal and track, and they deserve the same precision:
+
+- **jump** — skip an intermediate step of motion or perception without
+  explanation;
+- **misbind** — attach the observer's attention to an object that turns out
+  to be the wrong one;
+- **retroactive anchor** — begin with an object the reader cannot place,
+  then reveal what it was connected to;
+- **false continuity** — narrate as if the field were continuous, then
+  expose that the observer could not have seen what was claimed;
+- **parallel field** — two attention tracks that never meet, alternating;
+- **withheld anchor** — keep the observer's position secret while letting
+  objects move as if it were known.
+
+Test every break the way continuity is tested: what does the reader now
+believe, and when does the work cash that belief? A jump without a payable
+consequence is a glitch; a jump with one is a cut.
+
 ## Minimal pair
 
 A: `院里有树，树下有猫，门口停着一辆车。`
@@ -47,8 +68,21 @@ The nouns barely change. B gives attention a path: threshold -> cat -> motion ->
 
 ## Counterexamples
 
-- A static inventory can be right when the narrator is deliberately cataloguing a room or evidence table.
-- A hard cut can be stronger than continuous tracking when the story wants disorientation or temporal shock.
+- A static inventory can be right when the narrator is deliberately
+  cataloguing a room or evidence table.
+- A hard cut can be stronger than continuous tracking when the story wants
+  disorientation or temporal shock — the cut must still pay its belief
+  later.
+- A false-continuity reveal (the observer could not have seen X) is a
+  legitimate narrative weapon when the reader's re-read is the payoff.
+
+## Rule strength
+
+**Discourse tests.** No continuity preference, no camera-movement rules, no
+“always show the approach” default. The reliable operations are: locate the
+observer, name the attention transition, check reachability (or name the
+deliberate break), and test reordering as a one-variable intervention. The
+question is always what the reader believes and when the work pays it.
 
 ## Read next
 
@@ -59,4 +93,4 @@ The nouns barely change. B gives attention a path: threshold -> cat -> motion ->
 
 ## Return shape
 
-Return **current field -> attention transition -> newly available fact -> continuity verdict**. When revising, change order before changing diction.
+Return **current field -> attention transition -> newly available fact -> continuity verdict (or named break)**. When revising, change order before changing diction.
