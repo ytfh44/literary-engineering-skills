@@ -65,15 +65,18 @@ the controller veto a saturated operation?) rather than recognition.
 
 ## Reproducibility
 
-- Generator: `python tests/run_trigger_battery.py gen judge_input.json`
-  (descriptions + all fixture prompts).
-- Blinding: ids randomized per round with a fixed seed; mapping files kept
-  out of the repo (gitignored).
+- Generator: `python tests/run_trigger_battery.py gen judge_input.json
+  --map scoring_map.json --seed 42` (descriptions + all fixture prompts).
+- Blinding: opaque ids and prompt order are randomized per round with a fixed
+  seed; the private mapping is kept out of the repo (gitignored).
 - Judges: fresh-context agents, `isolated: true`, instructed to route by
   mechanism, never by id; every output validated (all ids present, routes
   within the 22 names + NONE + ASK).
-- Grading: two fresh judges, rubric from the per-case fail/pass criteria,
-  condition unknown; 96/96 verdicts.
+- Grading: `python tests/run_trigger_battery.py score --map
+  scoring_map.json judge_output_*.json`; duplicate, missing, unknown, or
+  invalid routes fail validation before any metric is computed. Two fresh
+  judges used a rubric from the per-case fail/pass criteria, with condition
+  unknown; 96/96 verdicts.
 
 Raw artifacts (slices, outputs, mappings, score reports) are gitignored by
 design — the record above is the deliverable, and the fixture file

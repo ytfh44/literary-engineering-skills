@@ -9,6 +9,7 @@ Thumbs.db
 
 # controlled-experiment artifacts (never commit)
 /judge_*.json
+/scoring_map*.json
 /blind_*.json
 /ab_*.json
 /gen_*_out.json

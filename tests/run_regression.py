@@ -40,6 +40,10 @@ def main():
     if p.returncode:
         print(p.stdout,p.stderr)
         return fail('structural validator failed')
+    p=subprocess.run([sys.executable,str(ROOT/'tests/test_trigger_battery.py')],text=True,capture_output=True)
+    if p.returncode:
+        print(p.stdout,p.stderr)
+        return fail('trigger battery protocol tests failed')
     print(f'PASS: regression fixtures complete for {len(EXPECTED)} skills')
     print('NOTE: prompt-trigger fixtures require a host agent/model to execute; this script validates fixture coverage and package invariants.')
     return 0

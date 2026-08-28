@@ -76,9 +76,9 @@ AI-probability or literary-quality score.
 `tests/run_regression.py` validates fixture coverage and package
 invariants.
 
-`tests/run_trigger_battery.py` packages the host-agent trigger eval:
-`gen` emits judge input (descriptions + fixtures), `score` grades the
-judge's routing against `eval_cases.yaml`. Actual prompt-trigger accuracy
-must be executed by the host agent/model that will use the skills —
-preferably as a controlled experiment with fresh-context judges, not by
-static inspection.
+`tests/run_trigger_battery.py` packages the host-agent trigger eval. `gen`
+emits public judge input with opaque, seeded ids and a separate private
+scoring map; `score` validates merged judge routing against that map before
+grading. Actual prompt-trigger accuracy must be executed by the host
+agent/model that will use the skills — preferably as a controlled experiment
+with fresh-context judges, not by static inspection.

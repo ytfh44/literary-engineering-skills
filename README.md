@@ -70,6 +70,7 @@ Scripts are optional. They count and compare; they do not grade prose.
 ```bash
 python tests/validate_pack.py .
 python tests/test_scripts.py
+python tests/test_trigger_battery.py
 python tests/run_regression.py
 ```
 
@@ -77,12 +78,18 @@ Prompt-trigger accuracy cannot be checked statically; run it with the host
 agent as a controlled experiment:
 
 ```bash
-python tests/run_trigger_battery.py gen judge_input.json
-# hand judge_input.json to fresh agent(s): route each id to one of the 22
-# skill names, "NONE", or "ASK" (see the literary-evals skill for the
-# procedure; split the prompts across several judges and merge the JSON)
-python tests/run_trigger_battery.py score judge_output.json
+python tests/run_trigger_battery.py gen judge_input.json \
+  --map scoring_map.json --seed 42
+# hand only judge_input.json to fresh agent(s): route each opaque id to one
+# of the 22 skill names, "NONE", or "ASK"; keep scoring_map.json private.
+# Split the prompts across several judges if desired, then merge their JSON:
+python tests/run_trigger_battery.py score --map scoring_map.json \
+  judge_output_a.json judge_output_b.json
 ```
+
+The seed makes the opaque-id assignment and prompt order reproducible. The
+scorer validates that every expected id appears exactly once, that no unknown
+ids or invalid routes are present, and only then computes trigger metrics.
 
 For quality-case A/B experiments (with-skill vs. no-skill on the same
 prompt), use the `quality_cases` fixtures in `tests/eval_cases.yaml` and
