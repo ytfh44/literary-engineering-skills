@@ -71,6 +71,24 @@ the reveal; a limited narrator pays by never cheating.
 7. Repair leaks: if the reader can infer that a character must have known
    something inconsistent with their behavior, the boundary is broken.
 
+## Focalizer plausibility / perception versus explanation
+
+For a limited focalizer, keep three layers in separate columns rather than letting fluent narration collapse them:
+
+focalizer | perception | role inference | narrator explanation | status
+
+- **Perception** is the bounded sensory, bodily, remembered, or documentary input available in the scene: what the focalizer can see, hear, touch, smell, read, or reliably recall.
+- **Role inference** is the character's interpretation of that input (including a mistaken label, causal guess, or practical prediction). Mark the evidence and the confidence; it is not a fact merely because the prose is confident.
+- **Narrator explanation** is a statement of mechanism, motive, or physical cause supplied from outside the focalizer's access. It needs an authorized source: the focalizer's demonstrated expertise, an institution or document available to the scene, or an explicitly omniscient narration.
+
+Exact physical causality is not licensed by vivid perception alone. The prose may render an observable sequence with exact physical precision in the perception column; that precision does not establish the hidden mechanism. If the scene lacks relevant expertise, institutional documentation, or omniscient authorization, label the causal claim `inference` or `unknown` and preserve the focalizer's uncertainty. A limited focalizer may describe a precise sensory sequence while remaining unable to name the mechanism; do not backfill the narrator's explanation into the character's knowledge column.
+
+A useful counterexample is a scene where a focalizer notices a latch, pressure change, and resulting movement in exact physical order. The order can be fully perceptible and therefore precise, while the claim about the hidden mechanism remains role inference or `unknown`. Only later expertise, a document, or an authorized narrator can upgrade it to explanation. The same separation applies when one focalizer's practical guess is repeated by another character as if it were established fact.
+
+### Handoff
+
+After this three-column pass, hand mechanism, consequence, and payment questions to `knowledge-consequence-audit`: pass along the perception span, the focalizer's inference and confidence, the authorized or missing source for any explanation, and the knowledge-state change before/after disclosure. Return here if the audit finds that the supposed fact was only an inference, or if a later consequence depends on whether the character could plausibly know it at that moment.
+
 ## Minimal pair
 
 > 他不知道妻子已经知道了。

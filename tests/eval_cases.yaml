@@ -942,6 +942,126 @@
           "prompt": "同一意象第三次出现。"
         }
       ]
+    },
+    "narrative-architecture": {
+      "should_trigger": [
+        "检查两个场景之间为什么必须在这里切换，而不是句子写得差。",
+        "分析场景4的揭示为什么要晚到场景7，并标出跨场景证据。",
+        "把这3个场景的事件顺序、呈现顺序和未知因果列出来。",
+        "哪些承诺在当前片段被建立、兑现、改写或仍开放？",
+        "这段从一个场景跳到另一个场景，判断是省略、闪回还是硬切，不要自动改写。",
+        "比较两个版本只移动一个揭示，哪些长程关系跟着变？",
+        "检查一条支线在这几个场景里是推进、复杂化、交叉还是保持未触碰。",
+        "分析这个段落为什么出现在这里，以及前后场景能恢复哪些中间状态。"
+      ],
+      "should_not_trigger": [
+        "只改这一句的节奏和停顿。",
+        "检查谁知道这个秘密、谁误会了什么。",
+        "分析门后先出现什么以及视线如何移动。",
+        "只删“因此”，看看因果是否还能成立。",
+        "做两个版本的单变量字符 diff。",
+        "给这个角色建立一个稳定动机。",
+        "给这段加一个伏笔并直接重写。",
+        "把整部小说重构成三幕大纲。"
+      ],
+      "ambiguous": [
+        "梦境中的时间是否真的倒流？",
+        "推理小说里的线索是伏笔还是红鲱鱼？",
+        "这个承诺没兑现是故意开放还是遗漏？",
+        "场景切换是跳切还是省略？"
+      ],
+      "quality_cases": [
+        {
+          "fail": "treats every then as a structural defect",
+          "pass": "checks whether intermediate states are recoverable across anchors",
+          "prompt": "他拿钥匙，开门，进屋。这里需要保留每一步吗？"
+        },
+        {
+          "fail": "closes every open commitment and invents causal edges",
+          "pass": "keeps unknown and open states with source anchors",
+          "prompt": "她答应会回来，但三个场景后仍没有回来。"
+        }
+      ]
+    },
+    "macro-narrative-architecture": {
+      "ambiguous": [
+        "两条平行线一直不汇合，是有意的形式还是漏回收？",
+        "只有梗概，没有章节顺序和场景锚点。",
+        "开放结尾与作者漏掉了承诺，如何区分？",
+        "章节顺序与故事时间不一致，是否就是结构错误？"
+      ],
+      "quality_cases": [
+        {
+          "fail": "requires every thread to appear in every chapter",
+          "pass": "preserves deliberate parallelism and marks non-evidence",
+          "prompt": "主线和桥接线在三章内没有相遇，分析是否必须补交叉。"
+        },
+        {
+          "fail": "ranks architecture by coverage or closure",
+          "pass": "uses anchored entries, exits, returns, loads, and unknowns",
+          "prompt": "请画章节×线程矩阵，但不要把未回收自动判成缺陷。"
+        }
+      ],
+      "should_not_trigger": [
+        "只分析这一句的节奏。",
+        "只分析一个场景里的视线移动。",
+        "检查谁知道这个秘密。",
+        "只删一个解释词做A/B。",
+        "给人物建立稳定动机。",
+        "统计全文关系词。",
+        "把整部小说直接重写成三幕。",
+        "只做章节字数统计。"
+      ],
+      "should_trigger": [
+        "分析整部小说的主线、留守线和插章如何交错。",
+        "按章节画多线程进入、退出、回流、交叉矩阵。",
+        "这一卷有三条线，检查每次切线带来的知识和检索负载。",
+        "追踪一个承诺从提出到兑现、变形或开放。",
+        "判断两条支线是否刻意不汇合，而不是强行收束。",
+        "看第1到95章一条梗线的生命周期和重定价。",
+        "分析跨章节回流与插入章的顺序效应。",
+        "比较主线、支线和桥接章节的承诺负载。"
+      ]
+    },
+    "knowledge-consequence-audit": {
+      "ambiguous": [
+        "角色知道不行动，是主题选择还是状态没有推进？",
+        "梦或象征中的新知是否需要现实后果？",
+        "开放伏笔暂未改变权限，应该保留还是修复？",
+        "只给了一个场景，但我想判断几章后的支付。"
+      ],
+      "quality_cases": [
+        {
+          "fail": "closes every open promise and invents a consequence",
+          "pass": "distinguishes open, paid, transformed, deliberate non-action, and unknown",
+          "prompt": "她答应回来，后面三章没回来；请先区分开放与遗漏。"
+        },
+        {
+          "fail": "treats recording a fact as a state transition",
+          "pass": "compares before/after permission, relation cost, and consequence anchors",
+          "prompt": "人物把异常抄进记录本，但继续按原流程做事。"
+        }
+      ],
+      "should_not_trigger": [
+        "只问谁知道秘密以及何时知道。",
+        "只分析场景中的注意力移动。",
+        "只改一句话的动词。",
+        "设计一个更稳定的人物动机。",
+        "分析整部小说的多线程结构。",
+        "只做情节摘要。",
+        "统计记录、封存出现了多少次。",
+        "核对单个物件的事实连续性。"
+      ],
+      "should_trigger": [
+        "分析这个发现跨几章后是否改变了能做什么。",
+        "追踪规则被记录以后，权限、观察状态和代价有没有变。",
+        "为什么人物知道不对却仍然回到日常？",
+        "做fact到belief到action到cost到next state的状态账本。",
+        "检查记录、封存、不追问是否重复但没有状态转移。",
+        "比较两个版本哪个新知真正改变了后果。",
+        "审计制度异常是否只被读者拼回而正文行动不显。",
+        "检查一个警告是否从知识层穿过不可逆阈值。"
+      ]
     }
   },
   "version": 2

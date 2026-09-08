@@ -69,50 +69,57 @@ and records what does not survive.
 
 ## II. Composition / discourse
 
- 1. `camera-attention-engineering` — reader access: reveal, occlusion,
-    attention handoff, scale, spatial continuity — and first-class
-    discontinuity (jump, misbind, retroactive anchor, false continuity,
-    parallel field, withheld anchor).
- 2. `sentence-pressure` — two tracks: semantic pressure (when information
-    arrives, withholds, revises, resolves) and kinetic/prosodic pressure
-    (how the sentence moves in the mouth, ear, and working memory).
- 3. `dialogue-voice` — a character voice is a cross-layer profile: preferred
-    names, address terms, hedges, particles, sentence endings, relation
-    markers, habitual metaphors, verb commitment, ellipsis, repair.
- 4. `narrator-intervention-abstraction-control` — how directly the narrator
-    names states, summarizes, concludes, and settles meaning; the evidence
-    policy that lets inference stay bounded. Absorbs the former anti-ai-prose
-    register work and sensory-specificity evidence work.
+1. `macro-narrative-architecture` — whole-work and volume-scale thread architecture: chapter order, inserts, crossings, returns, commitment lifecycles, and the knowledge/rhythm/retrieval load created by switches; observes without requiring closure.
+2. `camera-attention-engineering` — reader access: reveal, occlusion,
+   attention handoff, scale, spatial continuity — and first-class
+   discontinuity (jump, misbind, retroactive anchor, false continuity,
+   parallel field, withheld anchor).
+3. `narrative-architecture` — bounded cross-anchor observation of temporal,
+   causal, and obligation relations above the sentence/span level; preserves
+   competing readings and does not turn structure into a rewrite rule.
+4. `sentence-pressure` — two tracks: semantic pressure (when information
+   arrives, withholds, revises, resolves) and kinetic/prosodic pressure
+   (how the sentence moves in the mouth, ear, and working memory).
+5. `dialogue-voice` — a character voice is a cross-layer profile: preferred
+   names, address terms, hedges, particles, sentence endings, relation
+   markers, habitual metaphors, verb commitment, ellipsis, repair.
+6. `narrator-intervention-abstraction-control` — how directly the narrator
+   names states, summarizes, concludes, and settles meaning; the evidence
+   policy that lets inference stay bounded. Absorbs the former anti-ai-prose
+   register work and sensory-specificity evidence work.
 
 ## III. Character / world
 
- 1. `character-motive` — partially coherent generation: durable motives plus
-    habits, physiology, scripts, beliefs, misbeliefs, role performance,
-    imitation, unresolved conflicts, path dependence, context, and a residual
-    that is not explained by default. Labels are observations, not
-    parameters.
- 2. `knowledge-boundaries` — what each character knows, when they learned it,
-    what they misbelieve; asymmetry between character, narrator, and reader
-    (dramatic irony as a managed resource).
- 3. `social-naming-relation-maps` — the global map: naming consistency across
-    the work, relation arcs encoded in address terms (李叔 → 老李 → 李建国).
-    Local act in #3; global structure here.
+1. `character-motive` — partially coherent generation: durable motives plus
+   habits, physiology, scripts, beliefs, misbeliefs, role performance,
+   imitation, unresolved conflicts, path dependence, context, and a residual
+   that is not explained by default. Labels are observations, not
+   parameters.
+2. `knowledge-boundaries` — what each character knows, when they learned it,
+   what they misbelieve; asymmetry between character, narrator, and reader
+   (dramatic irony as a managed resource).
+3. `knowledge-consequence-audit` — cross-chapter state transitions from
+   knowledge or institutional records to action permission, relation cost, and
+   irreversible consequence; keeps open and deliberate non-action states.
+4. `social-naming-relation-maps` — the global map: naming consistency across
+   the work, relation arcs encoded in address terms (李叔 → 老李 → 李建国).
+   Local act in #3; global structure here.
 
 ## IV. Method / eval
 
- 1. `counterfactual-revision` — the shared experiment protocol: one variable,
-    frozen background, A/B, verdict. Every layer has its canonical
-    intervention (delete 因此 / delete 阴冷 / 父亲→那个男人 / 杀→毙 / 又→才).
- 2. `literary-evals` — trigger batteries, minimal pairs, counterexamples,
-    adversarial cases, transfer cases, regression for all 22 skills.
- 3. `corpus-convergence-audit` — operation-level convergence: different
-    words, same operation skeleton. Operation n-grams, transition matrix,
-    opening/closure strategy distribution, eventification rate.
- 4. `literary-style-router` — two-stage diagnosis: which layer, then which
-    mechanism. Symptoms are search prompts, not diagnoses.
- 5. `literary-strategy-controller` — state-aware strategy selection: track
-    the document state, compute marginal utility, adapt. Never randomize;
-    every local optimum repeated six times is a house style.
+1. `counterfactual-revision` — the shared experiment protocol: one variable,
+   frozen background, A/B, verdict. Every layer has its canonical
+   intervention (delete 因此 / delete 阴冷 / 父亲→那个男人 / 杀→毙 / 又→才).
+2. `literary-evals` — trigger batteries, minimal pairs, counterexamples,
+   adversarial cases, transfer cases, regression for all 25 skills.
+3. `corpus-convergence-audit` — operation-level convergence: different
+   words, same operation skeleton. Operation n-grams, transition matrix,
+   opening/closure strategy distribution, eventification rate.
+4. `literary-style-router` — two-stage diagnosis: which layer, then which
+   mechanism. Symptoms are search prompts, not diagnoses.
+5. `literary-strategy-controller` — state-aware strategy selection: track
+   the document state, compute marginal utility, adapt. Never randomize;
+   every local optimum repeated six times is a house style.
 
 ## Shared operation vocabulary
 

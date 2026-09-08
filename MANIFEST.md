@@ -1,6 +1,6 @@
 # Package Manifest
 
-This pack contains **22 Agent Skills** in the `skills/` container (v2
+This pack contains **25 Agent Skills** in the `skills/` container (v2
 taxonomy: four conceptual layers, flat directory layout), **65 focused
 reference manuals**, and **4 optional measurement scripts**.
 
@@ -25,24 +25,27 @@ carried as references under `adverb-particle-viewpoint-engineering`.
 
 ## Layer II — Composition / discourse
 
- 1. `camera-attention-engineering`
- 2. `sentence-pressure`
- 3. `dialogue-voice`
- 4. `narrator-intervention-abstraction-control`
+1. `macro-narrative-architecture`
+2. `camera-attention-engineering`
+3. `narrative-architecture`
+4. `sentence-pressure`
+5. `dialogue-voice`
+6. `narrator-intervention-abstraction-control`
 
 ## Layer III — Character / world
 
- 1. `character-motive`
- 2. `knowledge-boundaries`
- 3. `social-naming-relation-maps`
+1. `character-motive`
+2. `knowledge-boundaries`
+3. `knowledge-consequence-audit`
+4. `social-naming-relation-maps`
 
 ## Layer IV — Method / eval
 
- 1. `counterfactual-revision`
- 2. `literary-style-router`
- 3. `literary-evals`
- 4. `corpus-convergence-audit`
- 5. `literary-strategy-controller`
+1. `counterfactual-revision`
+2. `literary-style-router`
+3. `literary-evals`
+4. `corpus-convergence-audit`
+5. `literary-strategy-controller`
 
 ## Rule-strength gradient
 
@@ -65,7 +68,7 @@ AI-probability or literary-quality score.
 
 ## Evals
 
-`tests/eval_cases.yaml` (v2) contains, for every one of the 22 skills:
+`tests/eval_cases.yaml` (v2) contains, for every one of the 25 skills:
 
 - at least 8 should-trigger prompts;
 - at least 8 near-miss should-not-trigger prompts;

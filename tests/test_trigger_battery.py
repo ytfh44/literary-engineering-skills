@@ -45,7 +45,7 @@ with tempfile.TemporaryDirectory() as td:
     assert public_payload['format_version'] == 1
     assert mapping_payload['format_version'] == 1
     assert mapping_payload['seed'] == 42
-    assert len(public_payload['prompts']) == len(mapping_payload['cases']) == 474
+    assert len(public_payload['prompts']) == len(mapping_payload['cases']) == 534
     assert all(set(item) == {'id', 'prompt'} for item in public_payload['prompts'])
 
     descriptions = public_payload['descriptions']
@@ -90,7 +90,7 @@ with tempfile.TemporaryDirectory() as td:
     write_json(complete, routes)
     scored = run_cli('score', '--map', mapping, complete)
     assert scored.returncode == 0, scored.stdout + scored.stderr
-    assert 'RESULT: should_trigger 194/194  should_not_trigger 186/186' in scored.stdout
+    assert 'RESULT: should_trigger 218/218  should_not_trigger 210/210' in scored.stdout
 
     midpoint = len(routes) // 2
     ids = list(routes)

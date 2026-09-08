@@ -11,9 +11,9 @@ EXPECTED = [
     'french-derived-motion-packaging','adverb-particle-viewpoint-engineering',
     'property-and-adjective-engineering','naming-and-address-engineering',
     'predicate-licensing-and-personification',
-    'camera-attention-engineering','sentence-pressure','dialogue-voice',
+    'macro-narrative-architecture','camera-attention-engineering','narrative-architecture','sentence-pressure','dialogue-voice',
     'narrator-intervention-abstraction-control','character-motive',
-    'knowledge-boundaries','social-naming-relation-maps',
+    'knowledge-boundaries','knowledge-consequence-audit','social-naming-relation-maps',
     'counterfactual-revision','literary-style-router','literary-evals',
     'corpus-convergence-audit','literary-strategy-controller',
 ]

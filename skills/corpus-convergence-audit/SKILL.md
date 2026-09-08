@@ -68,6 +68,39 @@ few passages, it is a passage feature, not an operation.
 5. Report the skeleton with example spans from two different texts that
    share it.
 
+## Cross-focalizer and motif-lifecycle projection
+
+Use this projection when the same operation skeleton appears through multiple focalizers or when a repeated motif crosses chapters and its function may be changing. It is an observation projection of the existing audit, not a new skill and not a quality score. Occurrence counts, coverage, and closure are descriptive observations here, never a quality score.
+
+### Focalizer trace
+
+Record one row per focalizer and recurrence, keeping the columns distinct:
+
+focalizer | cue_type | inference_chain | closure | residue | work_state_before | work_state_after
+Read each row as cue_type -> inference_chain -> closure -> residue, then compare its work_state_before with work_state_after.
+
+- **cue_type** — the sensed, remembered, or encountered cue actually available to this focalizer (not the explanation supplied later).
+- **inference_chain** — the steps this focalizer can plausibly take from cue to read-out, including a gap or `unknown` where the chain outruns access.
+- **closure** — the local rule, prediction, decision, or future consequence the passage permits; record withheld closure as `open`, not as a completed explanation.
+- **residue** — what remains unresolved, reclassified, material, or actionable after the read-out.
+- **work_state_before/after** — the relevant state of knowledge, relation, object, risk, or expectation immediately before and after the recurrence.
+
+Compare rows across focalizers rather than flattening them into one narrator-level chain. Parallel lines or a deliberate chorus are valid when each line preserves its own access and the recurrence changes the work state. A repeated cue may therefore keep its surface role while changing its inference, closure, or residue.
+
+### Motif lifecycle
+
+For a motif that travels across chapters, trace:
+
+`birth -> propagation -> revaluation -> failure/adoption -> residue`
+
+Record what introduces the motif, how it is carried or echoed, what later scene changes its value or allegiance, where an expected use fails or a new use is adopted, and what material or relational residue remains. At each return, state `work_state_before` and `work_state_after`; recurrence counts as a lifecycle event only when the state, reading, or available consequence changes. If the work intentionally holds a state steady, label that as deliberate stasis and cite the parallel or choral function.
+
+### Input, output, and stopping line
+
+**Input:** passage/chapter spans, focalizer labels, motif identifiers, and the surrounding state needed to compare recurrences. **Output:** focalizer rows, motif lifecycle traces, two or more anchored spans, and a short note on whether the repetition is convergent, choral/parallel, or state-changing.
+
+Trigger this projection when different focalizers repeat a cue-to-read-out-rule/future-consequence skeleton, or when a motif shows a possible birth, propagation, revaluation, failure/adoption, or residue transition. Do not trigger it for one isolated cue, lexical repetition without an operational return, or a recurrence whose only evidence is frequency. Stop when each relevant recurrence has an anchored before/after state and the remaining difference is either evidenced as deliberate chorus/parallelism or marked unresolved; do not extend the trace to turn counts, coverage, closure, or recurrence into a verdict.
+
 ## Minimal pair
 
 Text A:
