@@ -12,7 +12,7 @@ EXPECTED = [
     'property-and-adjective-engineering','naming-and-address-engineering',
     'predicate-licensing-and-personification',
     'macro-narrative-architecture','camera-attention-engineering','narrative-architecture','sentence-pressure','dialogue-voice',
-    'narrator-intervention-abstraction-control','character-motive',
+    'narrator-intervention-abstraction-control','fair-play-mystery-audit','narrative-necessity-audit','character-motive',
     'knowledge-boundaries','knowledge-consequence-audit','social-naming-relation-maps',
     'counterfactual-revision','literary-style-router','literary-evals',
     'corpus-convergence-audit','literary-strategy-controller',

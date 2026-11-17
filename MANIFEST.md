@@ -1,6 +1,6 @@
 # Package Manifest
 
-This pack contains **25 Agent Skills** in the `skills/` container (v2
+This pack contains **27 Agent Skills** in the `skills/` container (v2
 taxonomy: four conceptual layers, flat directory layout), **65 focused
 reference manuals**, and **4 optional measurement scripts**.
 
@@ -31,6 +31,8 @@ carried as references under `adverb-particle-viewpoint-engineering`.
 4. `sentence-pressure`
 5. `dialogue-voice`
 6. `narrator-intervention-abstraction-control`
+7. `fair-play-mystery-audit`
+8. `narrative-necessity-audit`
 
 ## Layer III — Character / world
 
@@ -68,7 +70,7 @@ AI-probability or literary-quality score.
 
 ## Evals
 
-`tests/eval_cases.yaml` (v2) contains, for every one of the 25 skills:
+`tests/eval_cases.yaml` (v2) contains, for every one of the 27 skills:
 
 - at least 8 should-trigger prompts;
 - at least 8 near-miss should-not-trigger prompts;

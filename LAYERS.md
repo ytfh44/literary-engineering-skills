@@ -87,6 +87,12 @@ and records what does not survive.
    names states, summarizes, concludes, and settles meaning; the evidence
    policy that lets inference stay bounded. Absorbs the former anti-ai-prose
    register work and sensory-specificity evidence work.
+7. `fair-play-mystery-audit` — whether an announced solution is earned: derivability
+   from prior evidence, legitimate provenance, a misdirection that was viable when
+   offered, and ambiguity left open. Leaf skill of the narrative branch.
+8. `narrative-necessity-audit` — whether the telling earns its space: minimal joint
+   explanation for anomalies, a background that does not smuggle the anomaly, and
+   configuration evidence that excludes a whole alternative. Leaf skill of the narrative branch.
 
 ## III. Character / world
 
@@ -111,7 +117,7 @@ and records what does not survive.
    frozen background, A/B, verdict. Every layer has its canonical
    intervention (delete 因此 / delete 阴冷 / 父亲→那个男人 / 杀→毙 / 又→才).
 2. `literary-evals` — trigger batteries, minimal pairs, counterexamples,
-   adversarial cases, transfer cases, regression for all 25 skills.
+   adversarial cases, transfer cases, regression for all 27 skills.
 3. `corpus-convergence-audit` — operation-level convergence: different
    words, same operation skeleton. Operation n-grams, transition matrix,
    opening/closure strategy distribution, eventification rate.

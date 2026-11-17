@@ -8,7 +8,7 @@ Core rule: **preserve the cause of the effect; do not imitate the decoration.**
 
 ## v2 taxonomy: four conceptual layers
 
-The 25 skills are organized by **how deep in the language they load**. The
+The 27 skills are organized by **how deep in the language they load**. The
 shallower the carrier, the more reliable the audit rule; the deeper, the
 more the rule degrades into an analysis frame. The layers are conceptual —
 every skill still lives flat under `skills/` so discovery keeps working.
@@ -21,10 +21,11 @@ shared operation vocabulary.
   `verb-event-engineering`, `chinese-derived-event-geometry`,
   `english-derived-motion-packaging`, `french-derived-motion-packaging`,
   `adverb-particle-viewpoint-engineering`.
-- **II. Composition / discourse (6)** — `macro-narrative-architecture`,
+- **II. Composition / discourse (8)** — `macro-narrative-architecture`,
   `camera-attention-engineering`, `narrative-architecture`,
   `sentence-pressure`, `dialogue-voice`,
-  `narrator-intervention-abstraction-control`.
+  `narrator-intervention-abstraction-control`,
+  `fair-play-mystery-audit`, `narrative-necessity-audit`.
 - **III. Character / world (4)** — `character-motive`,
   `knowledge-boundaries`, `knowledge-consequence-audit`,
   `social-naming-relation-maps`.
@@ -47,7 +48,7 @@ optima into a house style.
 
 ## Layout
 
-All twenty-five skills live in the `skills/` container:
+All twenty-seven skills live in the `skills/` container:
 `skills/<name>/SKILL.md`. Each skill is a directory with `SKILL.md`;
 detailed material sits in `references/`; optional measurement tools sit in
 `scripts/`. This follows Agent Skills progressive disclosure: metadata
@@ -55,12 +56,15 @@ first, instructions on activation, resources on demand.
 
 The `skills/` container matches the discovery layout used by the open
 skills CLI (`npx skills add <owner>/literary-engineering-skills`
-auto-discovers all twenty-five; flat `skills/<name>/SKILL.md` is the
+auto-discovers all twenty-seven; flat `skills/<name>/SKILL.md` is the
 canonical one-level layout).
+
+See `docs/honkaku-domains.md` for the theory note behind the two mystery
+skills; it is not loaded by either of them.
 
 ## Use
 
-Install or copy the twenty-five skill directories (under `skills/`) into a
+Install or copy the twenty-seven skill directories (under `skills/`) into a
 skills-compatible agent's skill directory. Start with
 `literary-style-router` when the failure is unclear; invoke a domain skill
 directly when the mechanism is already known.
@@ -83,7 +87,7 @@ agent as a controlled experiment:
 python tests/run_trigger_battery.py gen judge_input.json \
   --map scoring_map.json --seed 42
 # hand only judge_input.json to fresh agent(s): route each opaque id to one
-# of the 25 skill names, "NONE", or "ASK"; keep scoring_map.json private.
+# of the 27 skill names, "NONE", or "ASK"; keep scoring_map.json private.
 # Split the prompts across several judges if desired, then merge their JSON:
 python tests/run_trigger_battery.py score --map scoring_map.json \
   judge_output_a.json judge_output_b.json

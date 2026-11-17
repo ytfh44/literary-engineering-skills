@@ -1062,6 +1062,86 @@
         "审计制度异常是否只被读者拼回而正文行动不显。",
         "检查一个警告是否从知识层穿过不可逆阈值。"
       ]
+    },
+    "fair-play-mystery-audit": {
+      "should_trigger": [
+        "结局说凶手是管家，但前面没有任何一处让他可能知道那封信的内容。这样算公平吗？",
+        "这条线索在揭示章才第一次出现，读者会不会觉得是作者现编的？",
+        "我想让读者误判成哥哥，但哥哥在第三章就已经被排除了，这个误导还成立吗？",
+        "结尾两种读法都还活着，我却让叙述者宣布其中一种是真的，可以吗？",
+        "有个假说从头到尾没被证据消掉，但读者都以为它已经死了，这样处理行不行？",
+        "全篇只有一个证人，如果他的证词被推翻，整个解答还站得住吗？",
+        "角色说他知道保险箱密码，但文本没写他什么时候看到的，这算来源问题吗？",
+        "读者能接受“真相成立但没人能猜到”吗？还是必须留下可推的痕迹？"
+      ],
+      "should_not_trigger": [
+        "只问谁知道这个秘密、谁误会了什么。",
+        "只改这一句的语域，让他听起来像律师。",
+        "只分析门后先出现什么、视线怎么移动。",
+        "只删一个“因此”，看因果是否还成立。",
+        "给这个角色建立一个稳定动机。",
+        "只统计全文出现了多少次“信”。",
+        "只比较两个版本哪一段节奏更好。",
+        "把整部小说重排成三幕大纲。"
+      ],
+      "ambiguous": [
+        "不可靠叙述者的谎言，算不算来源不合法？",
+        "所有线索都给了，读者还是觉得不公平，这算谁的问题？",
+        "真相成立但读者没被说服，是公平问题还是节奏问题？",
+        "叙述者故意隐瞒信息，算作弊还是合法留白？"
+      ],
+      "quality_cases": [
+        {
+          "fail": "treats surprise itself as unfairness and asks for more clues",
+          "pass": "checks whether the twin was traceable, licensed, and accessible before the reveal, and whether the answer is derivable",
+          "prompt": "结局揭示凶手是双胞胎中的另一个，前面只提过一句“他有个哥哥”。这样公平吗？"
+        },
+        {
+          "fail": "declares the hypothesis debunked because it was dropped",
+          "pass": "checks whether the hypothesis was eliminated by evidence and separates open from closed",
+          "prompt": "我想在最后揭穿一个假说，但它在第二章之后就没再被提过。"
+        }
+      ]
+    },
+    "narrative-necessity-audit": {
+      "should_trigger": [
+        "这个密室机关解释不通：门从里面锁着，但没有任何机制说明锁怎么合上。",
+        "我把三个机关叠在一起解释一个异常，删掉其中一个也照样成立，是不是写多了？",
+        "解释里说“因为他早就知道”，可这个“早知道”本身就是异常，这算不算循环？",
+        "事件本身已经把凶手说完了，我还安排了一个叙述者绕来绕去，这层叙述有必要吗？",
+        "这段叙述换成直接讲事件，读者得到的信息完全一样，我为什么还要这么写？",
+        "有个敲墙声一直没解释，读者会当成漏洞还是故意的开放？",
+        "那封伪造的信到底排除了哪个整体可能性？还是只是装饰？",
+        "事件层本来就没定死，我是不是必须补一个机关解释？"
+      ],
+      "should_not_trigger": [
+        "只改一句里的动词，让它更准。",
+        "只删一个形容词，看指代会不会坏。",
+        "只分析这一章和下一章的场景顺序。",
+        "只统计长短句交替。",
+        "只问谁知道这个秘密。",
+        "给主角建立一个稳定动机。",
+        "只做单变量的 A/B，比较两个版本。",
+        "把整本书的线程画成矩阵。"
+      ],
+      "ambiguous": [
+        "这段留白是必要还是漏写？",
+        "解释太长，算注水还是必要的铺垫？",
+        "读者觉得拖沓，是节奏问题还是叙述配置问题？",
+        "类型惯例要求解释机关，这算必要吗？"
+      ],
+      "quality_cases": [
+        {
+          "fail": "requires every anomaly to be explained and invents a mechanism",
+          "pass": "separates deliberate open weirdness from a promised solution and checks whether the anomaly needs a mechanism",
+          "prompt": "这章有个敲墙声，最后没解释。是不是必须补？"
+        },
+        {
+          "fail": "treats the narrator as automatically justified",
+          "pass": "checks what the telling adds that the events cannot and whether any whole alternative depends on it",
+          "prompt": "我把凶手、动机、手法都写在事件里了，还加了一个第一人称叙述者。"
+        }
+      ]
     }
   },
   "version": 2
