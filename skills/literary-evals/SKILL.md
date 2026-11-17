@@ -1,6 +1,6 @@
 ---
 name: literary-evals
-description: Use when testing literary skills, prompts, rubrics, or repeated model outputs for trigger accuracy, causal understanding, counterexample handling, cross-language transfer, regression, or newly learned stock phrases rather than revising one passage only; use for the pack's per-skill trigger batteries (22 skills) and minimal-pair suites.
+description: Use when testing literary skills, prompts, rubrics, or repeated model outputs for trigger accuracy, causal understanding, counterexample handling, cross-language transfer, regression, or newly learned stock phrases rather than revising one passage only; use for the pack's per-skill trigger batteries (25 skills) and minimal-pair suites.
 license: Apache-2.0
 ---
 
@@ -19,7 +19,7 @@ For one passage and one suspected variable, use `counterfactual-revision`. For b
 **A rule is useful only if it improves the target case and spares the
 counterexample.**
 
-The pack's trigger battery covers all 22 skills with four fixture families
+The pack's trigger battery covers all 25 skills with four fixture families
 per skill (should-trigger, should-not-trigger, ambiguous, quality cases);
 see `tests/eval_cases.yaml` and `tests/run_trigger_battery.py`. Fixture
 coverage is checked statically; prompt-trigger accuracy must be executed by

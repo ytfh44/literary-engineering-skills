@@ -5,6 +5,11 @@ agents. Static tests validate structure; these experiments measure what
 static tests cannot: trigger accuracy with real judges, and skill effect
 with and without guidance.
 
+These runs predate the three architecture-audit skills added afterwards.
+The counts below (22 skills, 474 prompts) are parameters of those runs, not
+of the current pack; `tests/eval_cases.yaml` now covers all 25 skills, so a
+fresh re-run uses a larger fixture set.
+
 ## Experiment 1 — trigger battery (double-blind, 3 rounds)
 
 **Design.** 474 prompts from `tests/eval_cases.yaml` (22 skills ×
